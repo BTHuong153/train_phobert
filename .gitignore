@@ -1,0 +1,16 @@
+# Virtual environment
+venv/
+
+# Thư mục chứa dữ liệu (ví dụ: dữ liệu huấn luyện, validation)
+data/
+
+# Thư mục chứa mô hình fine-tuned và các checkpoint
+phobert_leave_ner_finetuned/
+phobert_leave_ner_results/
+
+# Các file log
+*.log
+
+# Các file tạm thời, cache, ...
+__pycache__/
+*.pyc
