@@ -1,0 +1,3671 @@
+[
+  {
+    "text": "Cho phép tôi nghỉ tối hôm nay tại bị sốt và chiều ngày 11/12/2025 tại không khoẻ",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi cần được nghỉ chiều hôm nay và chiều nay do lý do sức khỏe",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho tôi xin phép nghỉ tối vào hôm 22/12/2025 không khoẻ",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi xin nghỉ trưa ngày kìa do việc cá nhân và chiều mai việc cá nhân",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi mong muốn được nghỉ sáng hôm 10/9/2025 do lý do sức khỏe và sáng ngày 9 vì việc cá nhân",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi cần được nghỉ trưa ngày mốt bởi lý do sức khỏe và chiều ngày kìa do bị sốt",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho phép tôi nghỉ chiều ngày kia bởi bị sốt",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi cần nghỉ sáng nay bởi không khoẻ",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi đề nghị nghỉ chiều trong ngày 25/5 bởi việc quan trọng",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho phép tôi xin nghỉ trưa ngày mốt do bị sốt và trưa ngày kìa do lý do sức khỏe",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi mong muốn được nghỉ tối hôm nay tại bị ốm và tối kia việc cá nhân",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho tôi xin phép được nghỉ tối ngày kìa việc cá nhân và trưa ngày mai",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "Tôi xin phép nghỉ trưa vào hôm 25/12 bởi việc quan trọng",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi mong muốn được nghỉ tối nay bởi bị ốm và chiều nay tại bị sốt",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho tôi xin phép nghỉ sáng kìa bởi không khoẻ",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi cần được nghỉ chiều vào hôm 1/8/2025 do việc quan trọng",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho tôi xin phép được nghỉ trưa trong ngày 21/6/2025 do không khoẻ",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi xin phép được nghỉ sáng kia vì việc gia đình và tối ngày mai",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "Tôi xin phép nghỉ trưa trong hôm 9/12/2025 việc quan trọng",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi mong được nghỉ trưa trong ngày 14/3",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "Cho tôi xin phép nghỉ chiều 2/4 vì bị ốm và trưa kìa việc quan trọng",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi mong muốn được nghỉ tối hôm nay",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "Tôi xin phép nghỉ chiều mốt vì không khoẻ",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi cần nghỉ tối trong hôm 20/5/2025",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "Tôi cần được nghỉ tối trong ngày 26/7/2025 do lý do sức khỏe",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho phép tôi xin nghỉ tối ngày kìa và trưa nay do việc quan trọng",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Xin phép nghỉ tối ngày 9/10 bởi không khoẻ",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi mong được nghỉ chiều mai vì không khoẻ và tối hôm nay việc quan trọng",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho phép tôi nghỉ sáng vào ngày 25/8 và tối hôm 26/6/2025 tại lý do sức khỏe",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi đề nghị nghỉ tối ngày kia tại bị ốm",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi mong muốn được nghỉ sáng nay và chiều nay vì bị ốm",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho phép tôi nghỉ tối trong hôm 27 và tối ngày 23 việc quan trọng",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Xin phép nghỉ chiều hôm 20/10/2025 tại việc quan trọng",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Xin phép nghỉ tối ngày kìa do lý do sức khỏe",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi đề nghị nghỉ sáng hôm 19/12/2025 bị ốm và trưa ngày 15 do bị ốm",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi cần được nghỉ trưa trong hôm 25 bởi bị sốt và tối mốt vì bị ốm",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi mong muốn được nghỉ tối ngày 23/11 bởi việc cá nhân và chiều mốt bị sốt",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Xin phép nghỉ sáng ngày mốt tại việc gia đình và chiều kia tại không khoẻ",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi mong được nghỉ sáng ngày 27",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "Cho tôi xin phép nghỉ tối 11/11 việc quan trọng và sáng mốt không khoẻ",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Xin phép nghỉ trưa trong ngày 27/5 vì việc cá nhân và sáng ngày kia do bị sốt",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi mong muốn được nghỉ chiều ngày mai tại việc gia đình",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho tôi xin phép được nghỉ tối hôm 15/4/2025 do việc cá nhân",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi cần nghỉ sáng ngày 7 vì bị sốt và tối trong ngày 3/10/2025 bởi bị sốt",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi cần nghỉ trưa trong ngày 4 do lý do sức khỏe",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi xin phép nghỉ tối hôm nay bởi việc quan trọng",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi cần được nghỉ trưa trong ngày 18 bởi bị sốt và chiều trong hôm 8/4 do việc cá nhân",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho tôi xin phép nghỉ sáng ngày 15/4 việc quan trọng và trưa nay bởi lý do sức khỏe",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi xin phép được nghỉ tối kia và sáng ngày 15/11/2025 bởi việc quan trọng",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho tôi xin phép nghỉ tối hôm nay và trưa vào ngày 5/12/2025 tại việc quan trọng",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi mong được nghỉ tối 15/7/2025 vì việc cá nhân và chiều mai tại bị ốm",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi cần được nghỉ sáng vào ngày 18 vì bị sốt",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi mong muốn được nghỉ tối vào ngày 12/9/2025 không khoẻ và tối trong hôm 9/11/2025 bởi việc quan trọng",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Xin phép nghỉ tối ngày kia bởi việc cá nhân và tối vào hôm 7/3/2025 tại bị sốt",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Xin phép nghỉ trưa hôm nay do việc gia đình",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho phép tôi nghỉ tối hôm nay do việc quan trọng và tối hôm nay việc cá nhân",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi mong muốn được nghỉ chiều trong hôm 8",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "Tôi xin phép được nghỉ trưa vào ngày 28/6/2025 và chiều vào hôm 17/12/2025 bởi lý do sức khỏe",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi mong muốn được nghỉ sáng 8/6/2025 bởi lý do sức khỏe và chiều ngày kia không khoẻ",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi mong muốn được nghỉ chiều mốt bị sốt",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho phép tôi nghỉ chiều vào hôm 7/4 bởi không khoẻ",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho tôi xin phép nghỉ tối 15/11 do bị ốm",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi xin phép được nghỉ tối hôm 18/7 tại việc quan trọng và tối hôm nay do bị sốt",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho tôi xin phép được nghỉ chiều trong hôm 21/3 do việc gia đình và sáng trong ngày 11/6 do việc quan trọng",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi xin phép được nghỉ trưa trong hôm 5/11/2025 do bị sốt",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho tôi xin phép nghỉ sáng trong ngày 3 tại không khoẻ",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi cần nghỉ sáng ngày kìa và sáng vào hôm 5 việc cá nhân",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi mong muốn được nghỉ trưa ngày mai",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "Xin phép nghỉ tối vào ngày 24 vì việc cá nhân",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho tôi xin phép nghỉ tối vào hôm 11/2 vì bị ốm và tối mai tại lý do sức khỏe",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi cần nghỉ tối ngày kìa bởi việc gia đình và trưa trong hôm 16/10 do lý do sức khỏe",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho phép tôi nghỉ tối kia và chiều kìa do bị ốm",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi cần được nghỉ sáng hôm 14/12/2025 do việc cá nhân",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi cần được nghỉ sáng vào ngày 4 do việc cá nhân và sáng trong hôm 17 bởi việc quan trọng",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi đề nghị nghỉ sáng vào ngày 15/10 do lý do sức khỏe",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho tôi xin phép được nghỉ tối mốt bị sốt và sáng vào hôm 19/12",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "Tôi xin phép được nghỉ chiều hôm nay bởi việc quan trọng và sáng trong hôm 6/5/2025 tại việc quan trọng",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho phép tôi nghỉ sáng 3/4 bởi không khoẻ",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi xin phép nghỉ trưa kìa tại lý do sức khỏe",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi xin nghỉ chiều ngày kia",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "Tôi cần nghỉ tối 18/5/2025 bởi bị ốm",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi xin nghỉ chiều hôm nay tại không khoẻ và chiều ngày 12/11 bởi lý do sức khỏe",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi đề nghị nghỉ chiều 8 bị sốt",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi đề nghị nghỉ sáng hôm nay do việc cá nhân",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi xin phép được nghỉ sáng ngày mai bởi việc cá nhân",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi mong muốn được nghỉ sáng hôm 6/9/2025 tại lý do sức khỏe",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi xin nghỉ chiều kia vì việc quan trọng",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi xin phép được nghỉ sáng mốt tại bị ốm và chiều trong hôm 27 tại việc quan trọng",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho phép tôi nghỉ sáng hôm nay và tối ngày 25/10 tại bị ốm",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi đề nghị nghỉ trưa mai bởi bị sốt và chiều vào ngày 24/1 tại việc quan trọng",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho tôi xin phép được nghỉ sáng vào ngày 21/1/2025 tại không khoẻ và trưa ngày kia bởi bị sốt",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi mong muốn được nghỉ chiều mốt tại việc gia đình",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho tôi xin phép nghỉ tối vào hôm 20 và trưa trong hôm 25",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "Tôi mong được nghỉ sáng kìa tại bị sốt và trưa nay do việc gia đình",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho tôi xin phép nghỉ chiều vào ngày 28/6/2025 việc cá nhân và sáng ngày kia",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "Tôi cần nghỉ sáng 24/4 vì bị ốm và sáng ngày mốt vì không khoẻ",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho phép tôi xin nghỉ trưa vào hôm 22 bởi lý do sức khỏe và sáng 7 việc gia đình",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi mong được nghỉ sáng ngày kìa",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "Tôi xin phép nghỉ chiều 27/10 và sáng hôm 3/5/2025 việc gia đình",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi xin phép được nghỉ sáng vào hôm 14/8 bởi việc cá nhân",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi cần nghỉ sáng mai tại việc gia đình và sáng trong hôm 2/7/2025 do lý do sức khỏe",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi đề nghị nghỉ trưa ngày kia bởi lý do sức khỏe",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho tôi xin phép được nghỉ chiều hôm 11/3/2025 tại bị sốt",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi xin phép nghỉ trưa vào ngày 9/4/2025 bị ốm",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi đề nghị nghỉ tối 27 vì bị sốt và tối nay",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE"
+    ]
+  },
+  {
+    "text": "Tôi xin nghỉ chiều ngày mốt",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "Cho tôi xin phép được nghỉ trưa trong ngày 20/11/2025",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "Cho tôi xin phép nghỉ tối ngày mai bởi không khoẻ",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Xin phép nghỉ trưa nay vì việc cá nhân",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi mong được nghỉ sáng mai vì bị sốt và trưa vào ngày 19 tại việc gia đình",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi mong muốn được nghỉ tối ngày kia do việc gia đình",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho tôi xin phép nghỉ chiều mốt do việc gia đình",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi xin phép được nghỉ sáng ngày mai bởi lý do sức khỏe",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho phép tôi nghỉ trưa trong hôm 14 bởi việc cá nhân và tối ngày mai tại không khoẻ",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho phép tôi nghỉ sáng vào ngày 23 việc cá nhân",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi xin phép nghỉ trưa ngày mai và tối ngày mốt không khoẻ",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi xin nghỉ tối trong hôm 25/8/2025 bởi việc quan trọng",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho phép tôi xin nghỉ chiều ngày 6/2 vì bị ốm và chiều 11/5 việc quan trọng",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi xin phép được nghỉ tối nay vì không khoẻ",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi cần nghỉ sáng mai tại bị sốt",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi xin phép nghỉ chiều 19/8 tại việc quan trọng và tối trong ngày 22/7/2025 không khoẻ",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Xin phép nghỉ trưa trong hôm 20",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "Tôi cần nghỉ tối vào hôm 20 tại không khoẻ và chiều trong ngày 24 vì không khoẻ",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi xin phép được nghỉ trưa ngày kìa tại việc cá nhân",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi mong muốn được nghỉ chiều kia tại bị ốm và sáng 3/9/2025",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE"
+    ]
+  },
+  {
+    "text": "Tôi mong được nghỉ sáng ngày 4/3 do bị sốt và sáng kia do bị sốt",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi mong được nghỉ sáng mốt vì việc gia đình",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi cần được nghỉ trưa ngày mai bởi bị sốt",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi xin phép nghỉ trưa mai vì lý do sức khỏe",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi xin nghỉ sáng trong ngày 20/4 bị ốm và chiều mai bị sốt",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho phép tôi xin nghỉ trưa kia do bị ốm",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho phép tôi nghỉ sáng ngày kia vì việc gia đình và chiều vào hôm 10/8/2025 bởi bị ốm",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi đề nghị nghỉ chiều vào ngày 6/5 bởi việc gia đình",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi mong muốn được nghỉ sáng ngày mốt",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "Tôi cần nghỉ trưa ngày 21/5 bởi bị sốt",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi xin nghỉ trưa hôm 5/1/2025 bởi bị ốm",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi mong được nghỉ tối mốt",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE"
+    ]
+  },
+  {
+    "text": "Tôi xin phép được nghỉ sáng trong hôm 25 bởi bị ốm",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi cần nghỉ chiều hôm 17 do việc gia đình và sáng ngày mai bị sốt",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho phép tôi nghỉ tối kìa vì việc cá nhân và sáng nay tại bị sốt",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi đề nghị nghỉ trưa ngày kia và chiều ngày mai bởi lý do sức khỏe",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho tôi xin phép nghỉ sáng kia bị sốt",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi cần nghỉ chiều ngày kia do việc quan trọng",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho tôi xin phép được nghỉ sáng vào ngày 26/11/2025 bởi bị sốt và trưa vào ngày 16",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "Cho tôi xin phép được nghỉ chiều hôm nay không khoẻ và sáng ngày kìa bởi bị ốm",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi xin phép được nghỉ sáng vào hôm 5/2 do việc quan trọng",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi xin phép nghỉ sáng ngày 17 tại bị sốt",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Xin phép nghỉ sáng trong hôm 16/9/2025 bởi bị sốt và trưa mai",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE"
+    ]
+  },
+  {
+    "text": "Tôi đề nghị nghỉ sáng trong hôm 5/5 tại không khoẻ",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi mong được nghỉ tối vào ngày 25/12/2025 vì việc quan trọng và trưa ngày 17/11/2025 vì bị ốm",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi xin phép nghỉ trưa trong hôm 23 tại việc gia đình",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi đề nghị nghỉ tối hôm nay",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "Tôi cần nghỉ sáng ngày 9/10/2025 do việc cá nhân",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi cần được nghỉ sáng kia",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE"
+    ]
+  },
+  {
+    "text": "Cho tôi xin phép được nghỉ chiều mai vì bị sốt và sáng ngày mai do việc cá nhân",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Xin phép nghỉ chiều mốt tại lý do sức khỏe",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi xin phép nghỉ sáng trong ngày 15/9 bởi bị sốt và tối trong ngày 5/4/2025 do việc quan trọng",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi cần nghỉ sáng ngày mốt do bị ốm",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi đề nghị nghỉ sáng 10 vì việc gia đình và tối hôm nay lý do sức khỏe",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi xin nghỉ sáng vào ngày 16 vì việc quan trọng và trưa trong hôm 20 tại bị sốt",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho phép tôi xin nghỉ trưa ngày kìa bởi không khoẻ",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho phép tôi nghỉ chiều ngày 10 bởi việc cá nhân và chiều 3/8/2025 bởi bị ốm",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi xin phép nghỉ sáng 15/8 việc cá nhân",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Xin phép nghỉ trưa vào hôm 18 và tối hôm nay không khoẻ",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi mong được nghỉ tối ngày kìa tại bị ốm",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi cần nghỉ sáng hôm 8/8/2025 không khoẻ và chiều 15/1/2025 vì việc quan trọng",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho tôi xin phép nghỉ tối mốt vì việc quan trọng",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi xin phép nghỉ trưa ngày mai do bị ốm",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Xin phép nghỉ sáng ngày 23/4/2025 bởi việc cá nhân và sáng vào hôm 11 tại không khoẻ",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi xin phép được nghỉ chiều 7 do không khoẻ",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho tôi xin phép được nghỉ sáng nay bởi bị ốm",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi mong được nghỉ chiều ngày mốt bởi bị ốm",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi xin nghỉ chiều hôm 1/11 việc gia đình",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho phép tôi xin nghỉ trưa vào ngày 28/4/2025 tại việc gia đình và chiều vào ngày 18/3/2025 bởi không khoẻ",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho tôi xin phép được nghỉ trưa trong ngày 6/11 lý do sức khỏe và sáng nay tại việc gia đình",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho phép tôi xin nghỉ chiều 12 tại bị sốt và chiều kìa tại việc cá nhân",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi mong muốn được nghỉ sáng trong ngày 19",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "Tôi xin nghỉ sáng ngày 22 bởi bị sốt và sáng vào ngày 3/5/2025",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "Tôi xin nghỉ chiều hôm nay bởi bị sốt và trưa ngày mốt tại lý do sức khỏe",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Xin phép nghỉ sáng vào hôm 11/10 bởi việc cá nhân và tối ngày kìa bởi việc quan trọng",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi cần được nghỉ trưa ngày 16/10 việc gia đình và sáng vào hôm 16/6/2025 do việc quan trọng",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho phép tôi nghỉ tối trong hôm 14/9/2025 vì việc quan trọng và sáng mốt do lý do sức khỏe",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho phép tôi nghỉ chiều kia bởi bị ốm",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi mong muốn được nghỉ tối kìa và sáng vào ngày 12",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "Cho phép tôi nghỉ sáng mốt",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE"
+    ]
+  },
+  {
+    "text": "Cho phép tôi nghỉ trưa kìa và trưa trong ngày 25/11 vì việc quan trọng",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Xin phép nghỉ tối mốt",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE"
+    ]
+  },
+  {
+    "text": "Tôi cần nghỉ sáng ngày kìa vì không khoẻ",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Xin phép nghỉ trưa kia và sáng mốt",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "O",
+      "B-SESSION",
+      "B-DATE"
+    ]
+  },
+  {
+    "text": "Tôi xin phép nghỉ tối kìa do bị sốt và trưa nay",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE"
+    ]
+  },
+  {
+    "text": "Tôi cần nghỉ tối ngày 28/5 do việc quan trọng",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi xin phép được nghỉ trưa trong ngày 25/10",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "Xin phép nghỉ sáng trong hôm 3/5/2025 bởi việc cá nhân",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho tôi xin phép được nghỉ sáng vào ngày 11 do bị ốm và chiều ngày kia việc cá nhân",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi cần nghỉ sáng trong hôm 7/9 tại việc quan trọng và trưa vào ngày 26 tại bị sốt",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi xin phép nghỉ trưa vào hôm 6/12 do bị sốt và trưa ngày kia bởi việc quan trọng",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi mong muốn được nghỉ trưa vào hôm 25/7 tại bị sốt",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi xin phép nghỉ tối ngày 20 do việc quan trọng",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Cho tôi xin phép nghỉ trưa trong hôm 13/6/2025 tại việc cá nhân",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Tôi đề nghị nghỉ chiều ngày 15 bị sốt",
+    "ner_tags": [
+      "O",
+      "O",
+      "O",
+      "O",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON"
+    ]
+  }
+]
