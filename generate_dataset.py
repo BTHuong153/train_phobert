@@ -4,6 +4,8 @@ import numpy as np
 from transformers import PreTrainedTokenizerFast, AutoModelForTokenClassification
 import os
 from datetime import datetime, timedelta
+import random
+import json
 
 app = Flask(__name__, static_folder="demo", static_url_path="")
 
@@ -333,7 +335,6 @@ print(f"Generated {len(dataset_list)} unique samples after {attempts} attempts."
 with open("data/train.json", "w", encoding="utf-8") as f:
     json.dump(dataset_list, f, ensure_ascii=False, indent=2)
 
-import random
 val_samples = random.sample(dataset_list, 200)
 with open("data/validation.json", "w", encoding="utf-8") as f:
     json.dump(val_samples, f, ensure_ascii=False, indent=2)
