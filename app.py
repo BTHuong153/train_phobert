@@ -19,7 +19,8 @@ model.eval()
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model.to(device)
-
+total_params = sum(p.numel() for p in model.parameters())
+print("Tổng số tham số:", total_params)
 # ---------------------------
 # Hàm xử lý ngày
 # ---------------------------
@@ -76,15 +77,17 @@ def extract_leave_info(text):
     Xử lý văn bản xin nghỉ phép để trích xuất thông tin:
       - "Nhân viên xin nghỉ": giá trị cố định "Test"
       - "Thời gian nghỉ": mảng các chuỗi, mỗi chuỗi kết hợp thông tin buổi và ngày.
-      - "Lý do": mảng các chuỗi, mỗi chuỗi là lý do tương ứng với từng yêu cầu (nếu có, nếu không có thì "Không có").
+      - "Lý do": mảng các chuỗi, mỗi chuỗi là lý do tương ứng với từng yêu cầu (nếu có, nếu không thì "Không có").
+      
     Quá trình:
       1. Tokenize văn bản và dự đoán nhãn.
       2. Tách các yêu cầu nghỉ dựa trên từ nối "và" (hoặc dấu phẩy).
       3. Với mỗi yêu cầu, trích xuất các token có nhãn SESSION, DATE và REASON.
-         - Kết hợp SESSION và DATE thành chuỗi "SESSION processed_date".
-         - Lấy lý do từ các token REASON (nếu có).
+         - Nếu có cả SESSION và DATE, kết hợp thành "SESSION processed_date".
+         - Nếu thiếu SESSION hoặc DATE, sử dụng phần có sẵn; nếu cả hai đều thiếu, gán "Không xác định".
+         - Tương tự, nếu không có REASON, gán "Không có".
     """
-    # Tokenize và dự đoán nhãn
+    # Tokenize văn bản và dự đoán nhãn
     words = text.split()
     tokenized_inputs = tokenizer(
         words,
@@ -103,6 +106,7 @@ def extract_leave_info(text):
         padding="max_length",
         max_length=128
     ).word_ids(batch_index=0)
+    
     with torch.no_grad():
         outputs = model(**tokenized_inputs)
     predictions = torch.argmax(outputs.logits, dim=2).cpu().numpy()[0]
@@ -148,25 +152,32 @@ def extract_leave_info(text):
                 date_tokens.append(word)
             elif label in ["B-REASON", "I-REASON"]:
                 reason_tokens.append(word)
-        # Xử lý thông tin thời gian nghỉ (gộp buổi và ngày)
-        if session_tokens and date_tokens:
-            session_str = " ".join(session_tokens)
-            date_str = " ".join(date_tokens)
-            processed_date = process_date(date_str)
-            leave_times.append(f"{session_str} {processed_date}")
-        elif session_tokens:
-            leave_times.append(" ".join(session_tokens))
-        elif date_tokens:
-            leave_times.append(process_date(" ".join(date_tokens)))
-        # Xử lý lý do
+        
+        # Xử lý "Thời gian nghỉ"
+        if session_tokens or date_tokens:
+            session_str = " ".join(session_tokens) if session_tokens else ""
+            date_str = " ".join(date_tokens) if date_tokens else ""
+            processed_date = process_date(date_str) if date_str else ""
+            if session_str and processed_date:
+                leave_times.append(f"{session_str} {processed_date}")
+            elif session_str:
+                leave_times.append(session_str)
+            elif processed_date:
+                leave_times.append(processed_date)
+            else:
+                leave_times.append("Không xác định")
+        else:
+            leave_times.append("Không xác định")
+        
+        # Xử lý "Lý do"
         if reason_tokens:
             reason_str = " ".join(reason_tokens)
             leave_reasons.append(reason_str)
     
     result = {
         "employee": "Test",
-        "leave_times": leave_times if leave_times else ["Không xác định"],
-        "leave_reasons": leave_reasons if leave_reasons else ["Không có"]
+        "leave_times": leave_times,
+        "leave_reasons": leave_reasons
     }
     return result
 
