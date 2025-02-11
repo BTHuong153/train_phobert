@@ -1,6 +1,6 @@
 [
   {
-    "text": "từ chiều trong ngày 3/10/2025 đến hết chiều mốt",
+    "text": "trưa trong hôm 21 theo quyết định của ban lãnh đạo.",
     "ner_tags": [
       "B-SESSION",
       "O",
@@ -9,1852 +9,18 @@
       "B-REASON",
       "I-REASON",
       "I-REASON",
-      "I-REASON",
-      "B-SESSION"
-    ]
-  },
-  {
-    "text": "tối 18 tại bị sốt và chiều ngày 9",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
       "O",
-      "I-DATE",
-      "B-REASON"
-    ]
-  },
-  {
-    "text": "từ 7/9 tối đến hết trong hôm 2/7 chiều",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE"
-    ]
-  },
-  {
-    "text": "từ ngày kia sáng vì việc cá nhân đến hết tối 12/12",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "tối trong hôm 17/6/2025, ngày kìa chiều vì việc gia đình và mai chiều",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON"
-    ]
-  },
-  {
-    "text": "sáng ngày 21/12 tại việc cá nhân",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "1/2 trưa",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE"
-    ]
-  },
-  {
-    "text": "21 sáng bởi bị ốm và kia tối tại việc quan trọng",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "O"
-    ]
-  },
-  {
-    "text": "tối vào ngày 21/1/2025 bởi bị sốt",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "ngày mai sáng tại việc quan trọng",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "ngày kia trưa vì bị ốm",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "tối vào hôm 11",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE"
-    ]
-  },
-  {
-    "text": "từ sáng ngày kia tại không khoẻ đến hết kìa tối tại bị ốm",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
       "O",
       "O",
       "O"
     ]
   },
   {
-    "text": "hôm 1 trưa",
+    "text": "từ hôm 19 trưa đến hết sáng hôm nay",
     "ner_tags": [
       "B-SESSION",
       "O",
-      "I-DATE"
-    ]
-  },
-  {
-    "text": "từ sáng trong ngày 10 bị sốt đến hết chiều 3/8/2025 bị sốt",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "O",
-      "O",
-      "O"
-    ]
-  },
-  {
-    "text": "trưa hôm nay bởi lý do sức khỏe",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "kìa chiều và kìa chiều bởi lý do sức khỏe",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "O"
-    ]
-  },
-  {
-    "text": "từ chiều vào ngày 21/2/2025 vì việc quan trọng đến hết mai chiều",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "O",
-      "O",
-      "O"
-    ]
-  },
-  {
-    "text": "ngày kia trưa và chiều ngày kia",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "ngày kia tối tại việc cá nhân và trong ngày 9/7/2025 chiều vì việc gia đình",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "O"
-    ]
-  },
-  {
-    "text": "chiều vào ngày 6/8/2025 bị sốt",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "vào ngày 25 sáng",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE"
-    ]
-  },
-  {
-    "text": "chiều vào hôm 19/12 vì lý do sức khỏe",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "trong hôm 17/8/2025 trưa, ngày 2 sáng bị sốt và vào hôm 24 chiều do việc quan trọng",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE"
-    ]
-  },
-  {
-    "text": "trưa ngày mai bởi lý do sức khỏe",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "từ kìa sáng đến hết trưa kia tại bị sốt",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "trưa vào hôm 6/11/2025",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE"
-    ]
-  },
-  {
-    "text": "ngày mai chiều, tối vào ngày 18 và trưa ngày 7/9 vì lý do sức khỏe",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-SESSION",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "O"
-    ]
-  },
-  {
-    "text": "từ trưa hôm 7/2 do không khoẻ đến hết hôm nay tối",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "O",
-      "O",
-      "O"
-    ]
-  },
-  {
-    "text": "sáng trong hôm 12/1/2025",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE"
-    ]
-  },
-  {
-    "text": "ngày 22 sáng bị ốm",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "từ ngày 22/8/2025 chiều bởi lý do sức khỏe đến hết chiều hôm nay",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "O",
-      "O",
-      "O"
-    ]
-  },
-  {
-    "text": "kia chiều",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE"
-    ]
-  },
-  {
-    "text": "từ mốt tối do không khoẻ đến hết tối trong ngày 25/6/2025 do bị sốt",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "O",
-      "O",
-      "O"
-    ]
-  },
-  {
-    "text": "tối vào ngày 6/11/2025",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE"
-    ]
-  },
-  {
-    "text": "nay trưa tại bị sốt",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "vào hôm 14/5 sáng",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE"
-    ]
-  },
-  {
-    "text": "tối 21/5 do không khoẻ và vào hôm 17 tối",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON"
-    ]
-  },
-  {
-    "text": "sáng hôm 25/8",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "I-DATE"
-    ]
-  },
-  {
-    "text": "từ trưa vào hôm 23/7 tại không khoẻ đến hết kia chiều bị sốt",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "O",
-      "O",
-      "O"
-    ]
-  },
-  {
-    "text": "tối vào ngày 19/4/2025",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE"
-    ]
-  },
-  {
-    "text": "kìa sáng tại bị sốt",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "từ trong hôm 17 sáng đến hết ngày kìa trưa bởi bị sốt",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "từ chiều ngày mai đến hết trong hôm 9 chiều",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE"
-    ]
-  },
-  {
-    "text": "chiều nay vì bị ốm",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "kia tối, vào hôm 3/1/2025 tối bởi việc gia đình và trưa trong hôm 25/11/2025",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION"
-    ]
-  },
-  {
-    "text": "sáng hôm 24/6/2025 tại việc cá nhân",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "trưa hôm nay không khoẻ",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "tối mai vì việc cá nhân",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "trưa vào hôm 16/12, hôm 20 chiều bị sốt và ngày kia tối việc cá nhân",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON"
-    ]
-  },
-  {
-    "text": "kia sáng và trưa trong ngày 10/10/2025",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O"
-    ]
-  },
-  {
-    "text": "tối vào ngày 26",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE"
-    ]
-  },
-  {
-    "text": "tối mốt tại việc gia đình",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "từ hôm 22/2/2025 tối do bị sốt đến hết sáng kia bởi không khoẻ",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "O",
-      "O",
-      "O"
-    ]
-  },
-  {
-    "text": "sáng hôm nay do không khoẻ",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "trưa nay bị sốt",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "tối ngày kìa tại lý do sức khỏe",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "trưa ngày kìa và 26/11/2025 trưa",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-SESSION",
-      "B-DATE",
-      "O"
-    ]
-  },
-  {
-    "text": "trong hôm 20/10/2025 sáng",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE"
-    ]
-  },
-  {
-    "text": "trong ngày 9 sáng không khoẻ",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "sáng vào hôm 17/5/2025 tại việc cá nhân, chiều kia và trưa hôm 12/4",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "B-SESSION",
-      "O",
-      "I-DATE",
-      "O"
-    ]
-  },
-  {
-    "text": "trong ngày 22/6 trưa tại bị sốt và vào ngày 5/4 trưa",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON"
-    ]
-  },
-  {
-    "text": "ngày mai chiều và sáng nay",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON"
-    ]
-  },
-  {
-    "text": "tối kia tại việc cá nhân, tối vào ngày 19 việc cá nhân và chiều hôm 4 do việc cá nhân",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "O"
-    ]
-  },
-  {
-    "text": "chiều trong ngày 23/4/2025 do bị ốm",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "từ sáng hôm nay đến hết trong hôm 17/11/2025 chiều tại lý do sức khỏe",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "từ tối 24/12 việc quan trọng đến hết trưa ngày kìa",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "O"
-    ]
-  },
-  {
-    "text": "từ trưa ngày mai đến hết vào ngày 8/3 trưa",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "từ tối nay đến hết kia trưa bởi không khoẻ",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "hôm 16/10/2025 chiều vì việc cá nhân",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "ngày kia chiều vì không khoẻ",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "từ tối mốt vì việc cá nhân đến hết chiều ngày kìa",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "O",
-      "O",
-      "O"
-    ]
-  },
-  {
-    "text": "từ chiều nay đến hết mai trưa bởi việc quan trọng",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "chiều nay do bị sốt và trưa mai do việc cá nhân",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "O"
-    ]
-  },
-  {
-    "text": "trong hôm 13/12/2025 tối vì lý do sức khỏe",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "17/2/2025 tối bị sốt",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "chiều kia",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE"
-    ]
-  },
-  {
-    "text": "trong hôm 19/6/2025 trưa, vào hôm 9 trưa tại việc cá nhân và mai tối",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "từ trưa nay đến hết trưa ngày 3/10",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "I-DATE"
-    ]
-  },
-  {
-    "text": "từ sáng trong ngày 14/10/2025 đến hết sáng ngày mốt",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE"
-    ]
-  },
-  {
-    "text": "từ ngày mốt chiều đến hết chiều ngày kia",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
       "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE"
-    ]
-  },
-  {
-    "text": "chiều vào ngày 9 do bị sốt",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "từ tối ngày kìa đến hết chiều ngày 2",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O"
-    ]
-  },
-  {
-    "text": "tối ngày mai, tối trong ngày 23 và tối ngày 7",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE"
-    ]
-  },
-  {
-    "text": "trong hôm 5 chiều việc cá nhân và sáng hôm 11/4 do việc cá nhân",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "O"
-    ]
-  },
-  {
-    "text": "10 sáng",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE"
-    ]
-  },
-  {
-    "text": "từ trưa kia đến hết chiều ngày mốt",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE"
-    ]
-  },
-  {
-    "text": "trong ngày 10 sáng và ngày kìa tối",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION"
-    ]
-  },
-  {
-    "text": "chiều hôm nay và trưa kìa",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "vào ngày 21/7 tối",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE"
-    ]
-  },
-  {
-    "text": "từ vào hôm 19/2/2025 sáng đến hết sáng ngày mai",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE"
-    ]
-  },
-  {
-    "text": "từ tối kia tại việc quan trọng đến hết tối vào ngày 16",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "từ chiều mốt đến hết mốt trưa không khoẻ",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON"
-    ]
-  },
-  {
-    "text": "21 trưa tại bị sốt",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "từ sáng kia đến hết hôm nay trưa vì không khoẻ",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "O",
-      "O",
-      "O"
-    ]
-  },
-  {
-    "text": "từ chiều mai vì không khoẻ đến hết chiều 16/2 việc quan trọng",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "O",
-      "O",
-      "O"
-    ]
-  },
-  {
-    "text": "từ chiều trong hôm 20/7 việc cá nhân đến hết sáng kia",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "O",
-      "O",
-      "O"
-    ]
-  },
-  {
-    "text": "hôm nay sáng bởi không khoẻ và trưa vào hôm 22/5/2025 vì lý do sức khỏe",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "O"
-    ]
-  },
-  {
-    "text": "ngày kìa sáng việc cá nhân",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "ngày mốt trưa việc quan trọng",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "kìa tối bởi bị sốt, chiều vào hôm 4/1/2025 và sáng hôm nay",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "O"
-    ]
-  },
-  {
-    "text": "hôm 24 trưa bởi việc cá nhân",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "ngày 16/7 trưa lý do sức khỏe",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "từ trưa ngày 1/12/2025 đến hết sáng trong ngày 19",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "I-DATE",
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "ngày kia trưa, ngày kia tối và vào ngày 20/2/2025 chiều",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "từ vào ngày 14 chiều đến hết chiều trong hôm 15",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "O"
-    ]
-  },
-  {
-    "text": "từ chiều ngày kia vì lý do sức khỏe đến hết ngày 27/5/2025 tối",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "I-DATE",
-      "O",
-      "O",
-      "O"
-    ]
-  },
-  {
-    "text": "từ ngày mốt chiều bởi việc gia đình đến hết mai sáng bị ốm",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "O",
-      "O",
-      "O"
-    ]
-  },
-  {
-    "text": "chiều mai do bị sốt",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "trong hôm 9/6 chiều",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE"
-    ]
-  },
-  {
-    "text": "mai trưa việc cá nhân và vào hôm 15/5/2025 sáng",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "O"
-    ]
-  },
-  {
-    "text": "trong hôm 1/6 chiều, sáng 11/6 tại bị ốm và trong ngày 15/4 trưa vì bị ốm",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "O"
-    ]
-  },
-  {
-    "text": "trưa mai bị ốm",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "trưa 10/6 tại việc quan trọng, tối hôm 5/9/2025 và chiều trong hôm 9/12/2025 bởi bị ốm",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "I-DATE",
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "O"
-    ]
-  },
-  {
-    "text": "ngày kìa tối bởi bị sốt",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "từ ngày 1 tối việc gia đình đến hết trưa nay lý do sức khỏe",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "O",
-      "O",
-      "O"
-    ]
-  },
-  {
-    "text": "vào hôm 22/2 tối bởi lý do sức khỏe, hôm nay tối do bị sốt và hôm 22 trưa",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "I-DATE",
-      "B-REASON"
-    ]
-  },
-  {
-    "text": "kìa chiều, trưa mốt do không khoẻ và 2 trưa do không khoẻ",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "trong hôm 15 chiều tại lý do sức khỏe",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "chiều mốt tại không khoẻ",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "từ mốt sáng vì việc cá nhân đến hết ngày mai trưa",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "O",
-      "O",
-      "O"
-    ]
-  },
-  {
-    "text": "từ ngày kia tối đến hết nay tối",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON"
-    ]
-  },
-  {
-    "text": "ngày mốt sáng, tối trong ngày 21/1 do việc cá nhân và chiều ngày kia không khoẻ",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE"
-    ]
-  },
-  {
-    "text": "hôm nay chiều lý do sức khỏe",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "kìa tối, sáng kìa do bị ốm và tối vào hôm 5 vì việc quan trọng",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "ngày mốt chiều bởi bị ốm",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "24/4 tối việc quan trọng",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "vào ngày 18/4 trưa do bị sốt",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "trưa vào ngày 10/8/2025 do việc cá nhân và mốt chiều",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON"
-    ]
-  },
-  {
-    "text": "từ chiều hôm 1/4 đến hết mai sáng",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE"
-    ]
-  },
-  {
-    "text": "chiều mốt tại việc cá nhân",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "chiều kìa và kìa trưa do bị ốm",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
       "B-REASON",
       "I-REASON",
       "I-REASON",
@@ -1864,11 +30,712 @@
     ]
   },
   {
-    "text": "ngày 25/8/2025 chiều, tối ngày mai và ngày mốt tối vì không khoẻ",
+    "text": "11 trưa theo hướng dẫn của ban giám đốc.",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "từ sáng 7/2/2025 bởi việc cá nhân đến hết chiều trong hôm 28/7/2025",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Trong bối cảnh công ty mở rộng quy mô, ngày mốt sáng do bị ốm",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "ngày 12/11 chiều",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "từ tối mốt đến hết hôm 6 sáng do lý do sức khỏe",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-SESSION",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "từ kìa chiều đến hết trong ngày 23 tối",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O"
+    ]
+  },
+  {
+    "text": "Trong bối cảnh công ty mở rộng quy mô, từ trưa vào hôm 19 đến hết tối ngày kia",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Theo thông báo của ban giám đốc, chiều trong hôm 5, sáng kia và mốt chiều",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "mốt tối tại việc cá nhân và hôm nay chiều bởi lý do sức khỏe",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O"
+    ]
+  },
+  {
+    "text": "ngày mai sáng vì bị sốt",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Theo thông báo của ban giám đốc, hôm 16/11 tối",
     "ner_tags": [
       "B-SESSION",
       "O",
       "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "tối hôm 7/1/2025",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "chiều vào ngày 2 việc quan trọng, trong hôm 6/6 trưa vì việc cá nhân và tối kia",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON"
+    ]
+  },
+  {
+    "text": "Theo thông báo của ban giám đốc, ngày kia tối do việc quan trọng và sáng ngày 21",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "trưa kìa theo quyết định của ban lãnh đạo.",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "từ mai trưa tại việc gia đình đến hết trong ngày 25/10/2025 chiều vì việc quan trọng",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "từ ngày mai trưa tại không khoẻ đến hết chiều kìa",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "từ chiều kìa đến hết tối ngày 23/7/2025 bởi việc cá nhân",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "ngày kìa tối vì bị sốt để đảm bảo hoạt động liên tục.",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "từ sáng hôm 28/10 đến hết tối ngày 18/4",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O"
+    ]
+  },
+  {
+    "text": "chiều ngày 20/7 bởi bị ốm và hôm 2 chiều do việc gia đình",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O"
+    ]
+  },
+  {
+    "text": "từ trong hôm 2/11 chiều tại việc gia đình đến hết kìa tối do không khoẻ",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "ngày mốt tối do không khoẻ theo hướng dẫn của ban giám đốc.",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "từ trưa vào hôm 13/4/2025 đến hết ngày kìa tối để đảm bảo hoạt động liên tục.",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "15/7/2025 tối, 25/10 tối và sáng kia",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION"
+    ]
+  },
+  {
+    "text": "Trong bối cảnh công ty mở rộng quy mô, sáng ngày kìa tại lý do sức khỏe",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "từ mai chiều bị ốm đến hết trưa mốt",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "vào hôm 8 trưa",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "sáng hôm 12 và tối ngày kìa",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Theo thông báo của ban giám đốc, hôm 28/1 sáng tại bị sốt",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "từ tối vào ngày 4/5/2025 đến hết tối ngày kìa",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "từ vào hôm 1/1 trưa tại không khoẻ đến hết sáng vào hôm 1/12 do không khoẻ vì các vấn đề nội bộ.",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "hôm 23/11/2025 chiều vì bị ốm",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "tối vào hôm 22 vì các vấn đề nội bộ.",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "mai chiều việc cá nhân theo hướng dẫn của ban giám đốc.",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "chiều vào ngày 27/7 theo quyết định của ban lãnh đạo.",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "vào hôm 25/10 tối tại lý do sức khỏe, sáng hôm nay vì bị sốt và ngày kìa sáng",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON"
+    ]
+  },
+  {
+    "text": "chiều 17 vì lý do sức khỏe, sáng ngày mai lý do sức khỏe và sáng mốt",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "O"
+    ]
+  },
+  {
+    "text": "tối trong hôm 17 việc gia đình, chiều trong ngày 16 lý do sức khỏe và sáng nay",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON"
+    ]
+  },
+  {
+    "text": "chiều kia và vào ngày 2/10/2025 tối do lý do sức khỏe",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O"
+    ]
+  },
+  {
+    "text": "trong hôm 25/4 sáng",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "mốt sáng, hôm nay chiều do không khoẻ và ngày kia chiều",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
       "B-REASON",
       "I-REASON",
       "I-REASON",
@@ -1882,7 +749,7 @@
     ]
   },
   {
-    "text": "sáng trong ngày 26 và ngày 28 chiều",
+    "text": "Trong bối cảnh công ty mở rộng quy mô, tối vào ngày 4/1/2025 việc quan trọng",
     "ner_tags": [
       "B-SESSION",
       "O",
@@ -1890,361 +757,59 @@
       "I-DATE",
       "B-REASON",
       "I-REASON",
-      "B-SESSION",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
       "O"
     ]
   },
   {
-    "text": "chiều ngày 23/7, sáng kìa và vào ngày 21 trưa",
+    "text": "Theo quyết định của phòng nhân sự, tối ngày kia",
     "ner_tags": [
       "B-SESSION",
-      "O",
+      "B-DATE",
       "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "tối 18/4/2025 việc quan trọng, sáng ngày kìa do bị sốt và trưa 22/11",
+    "ner_tags": [
       "B-SESSION",
       "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
       "B-SESSION",
-      "O",
-      "O",
+      "B-DATE",
       "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
       "B-REASON"
     ]
   },
   {
-    "text": "trưa trong ngày 22",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE"
-    ]
-  },
-  {
-    "text": "chiều ngày mốt việc gia đình và tối vào hôm 13/7/2025",
+    "text": "từ ngày kìa tối đến hết chiều ngày mốt vì việc gia đình",
     "ner_tags": [
       "B-SESSION",
       "B-DATE",
       "I-DATE",
       "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "O"
-    ]
-  },
-  {
-    "text": "tối hôm nay việc cá nhân",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "chiều hôm nay vì việc cá nhân, trong ngày 15/6 tối bởi việc quan trọng và sáng trong hôm 27",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON"
-    ]
-  },
-  {
-    "text": "trưa trong hôm 5 vì không khoẻ",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "tối trong hôm 18/10 tại không khoẻ",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "ngày mai chiều do việc gia đình",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "kia chiều, chiều hôm 6 và sáng 4 bị sốt",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "I-DATE",
-      "B-REASON"
-    ]
-  },
-  {
-    "text": "từ chiều 2/9 tại việc cá nhân đến hết sáng ngày 9/1 vì không khoẻ",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "O",
-      "O",
-      "O"
-    ]
-  },
-  {
-    "text": "tối trong ngày 24/9",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE"
-    ]
-  },
-  {
-    "text": "từ trong ngày 8 trưa đến hết trưa mai",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE"
-    ]
-  },
-  {
-    "text": "trưa trong hôm 26 tại việc gia đình",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "chiều trong ngày 27/5/2025 bởi lý do sức khỏe",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "kìa sáng bị sốt, ngày 19/10 trưa do không khoẻ và chiều hôm nay",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON"
-    ]
-  },
-  {
-    "text": "từ nay sáng đến hết tối mai",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "từ trong ngày 4/2 trưa đến hết sáng kìa",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE"
-    ]
-  },
-  {
-    "text": "từ vào hôm 21/10/2025 sáng bởi bị sốt đến hết trưa 14 vì bị sốt",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "O",
-      "O",
-      "O"
-    ]
-  },
-  {
-    "text": "mai tối vì bị ốm và trong hôm 11 trưa",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON"
-    ]
-  },
-  {
-    "text": "trưa vào hôm 19/12/2025 lý do sức khỏe, kìa trưa và kia sáng tại không khoẻ",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "O"
-    ]
-  },
-  {
-    "text": "từ chiều ngày 5 đến hết trưa vào ngày 18/6/2025",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "I-DATE",
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "ngày kia sáng bởi bị ốm",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "hôm 22/12 chiều tại bị ốm",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "trong hôm 20/3/2025 trưa",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE"
-    ]
-  },
-  {
-    "text": "từ trưa 8/6 do lý do sức khỏe đến hết chiều ngày mốt",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
       "I-REASON",
       "I-REASON",
       "I-REASON",
@@ -2257,94 +822,8 @@
     ]
   },
   {
-    "text": "trong hôm 13/4 sáng do việc cá nhân, ngày kìa tối do việc cá nhân và hôm 23/6 sáng",
+    "text": "ngày mốt sáng vì các vấn đề nội bộ.",
     "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "I-DATE",
-      "O"
-    ]
-  },
-  {
-    "text": "ngày mốt chiều tại việc cá nhân, mai tối và vào ngày 19 sáng",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON"
-    ]
-  },
-  {
-    "text": "chiều hôm 16/3/2025",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "I-DATE"
-    ]
-  },
-  {
-    "text": "tối mai do việc gia đình và chiều ngày mai",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON"
-    ]
-  },
-  {
-    "text": "vào hôm 16/9/2025 trưa vì lý do sức khỏe",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "từ ngày kia trưa tại bị sốt đến hết ngày mốt chiều bởi không khoẻ",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
       "B-SESSION",
       "B-DATE",
       "I-DATE",
@@ -2357,298 +836,35 @@
     ]
   },
   {
-    "text": "từ mai trưa bởi bị ốm đến hết chiều ngày mốt vì lý do sức khỏe",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "O",
-      "O",
-      "O"
-    ]
-  },
-  {
-    "text": "từ ngày kìa trưa đến hết chiều trong hôm 19/2",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE"
-    ]
-  },
-  {
-    "text": "trưa trong ngày 8 lý do sức khỏe",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "chiều ngày 28 do việc cá nhân và kìa chiều bị ốm",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "O"
-    ]
-  },
-  {
-    "text": "ngày 22 chiều tại lý do sức khỏe",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "từ trưa trong hôm 25 đến hết vào hôm 18 sáng",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "O"
-    ]
-  },
-  {
-    "text": "kìa sáng và trưa 7",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "hôm nay sáng tại lý do sức khỏe",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "vào ngày 12/5 trưa vì việc cá nhân và hôm 27/4/2025 tối tại bị sốt",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "O"
-    ]
-  },
-  {
-    "text": "chiều trong ngày 23 tại không khoẻ",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "kìa sáng và chiều ngày 23/11/2025 việc quan trọng",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "O",
-      "I-DATE"
-    ]
-  },
-  {
-    "text": "tối vào hôm 14/6/2025",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE"
-    ]
-  },
-  {
-    "text": "sáng mốt và sáng trong ngày 7/9",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON"
-    ]
-  },
-  {
-    "text": "từ trưa mai đến hết kia tối bởi lý do sức khỏe",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "I-REASON",
-      "O"
-    ]
-  },
-  {
-    "text": "trưa 14/2",
+    "text": "sáng 12/9/2025",
     "ner_tags": [
       "B-SESSION",
       "B-DATE"
     ]
   },
   {
-    "text": "sáng trong hôm 1/3 do bị ốm",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "sáng ngày mai tại bị ốm",
+    "text": "Theo quyết định của phòng nhân sự, tối kia do bị sốt",
     "ner_tags": [
       "B-SESSION",
       "B-DATE",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "trưa trong ngày 13",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
-      "I-DATE"
-    ]
-  },
-  {
-    "text": "từ chiều ngày kia đến hết trong ngày 12/3 tối bởi việc cá nhân",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
       "B-REASON",
       "I-REASON",
       "I-REASON",
-      "I-REASON",
-      "B-SESSION",
       "O",
       "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "vào hôm 17/9/2025 sáng do bị ốm",
-    "ner_tags": [
-      "B-SESSION",
       "O",
       "O",
-      "I-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "từ ngày kìa sáng đến hết kìa tối vì bị ốm",
-    "ner_tags": [
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON",
-      "I-REASON",
-      "I-REASON",
       "O",
       "O",
       "O"
     ]
   },
   {
-    "text": "chiều nay tại việc cá nhân",
+    "text": "sáng ngày kia bởi việc cá nhân",
     "ner_tags": [
       "B-SESSION",
       "B-DATE",
+      "I-DATE",
       "B-REASON",
       "I-REASON",
       "I-REASON",
@@ -2656,10 +872,11 @@
     ]
   },
   {
-    "text": "trưa ngày kìa vì lý do sức khỏe",
+    "text": "trong hôm 8/1/2025 tối vì lý do sức khỏe",
     "ner_tags": [
       "B-SESSION",
-      "B-DATE",
+      "O",
+      "O",
       "I-DATE",
       "B-REASON",
       "I-REASON",
@@ -2669,9 +886,109 @@
     ]
   },
   {
-    "text": "ngày 7/4 tối bởi bị ốm",
+    "text": "từ mốt tối tại việc quan trọng đến hết trong hôm 18/11 tối việc gia đình để đảm bảo hoạt động liên tục.",
     "ner_tags": [
       "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "10/10/2025 sáng, ngày kia tối do lý do sức khỏe và ngày 22/10 sáng",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION"
+    ]
+  },
+  {
+    "text": "Theo quyết định của phòng nhân sự, ngày kia sáng bởi việc quan trọng",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "chiều ngày 17/12 theo hướng dẫn của ban giám đốc.",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "sáng ngày mốt vì không khoẻ theo quyết định của ban lãnh đạo.",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "tối trong hôm 6/10 do bị sốt",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
       "O",
       "I-DATE",
       "B-REASON",
@@ -2680,44 +997,143 @@
     ]
   },
   {
-    "text": "ngày mốt sáng vì việc gia đình",
+    "text": "từ chiều trong ngày 12/12/2025 đến hết tối ngày mốt",
     "ner_tags": [
       "B-SESSION",
-      "B-DATE",
+      "O",
+      "O",
       "I-DATE",
       "B-REASON",
       "I-REASON",
       "I-REASON",
-      "I-REASON"
-    ]
-  },
-  {
-    "text": "sáng kìa, trưa ngày kia và trưa mốt",
-    "ner_tags": [
       "B-SESSION",
       "B-DATE",
-      "B-SESSION",
-      "B-DATE",
-      "I-DATE",
-      "B-SESSION",
-      "B-DATE",
-      "B-REASON"
-    ]
-  },
-  {
-    "text": "tối vào hôm 4/7",
-    "ner_tags": [
-      "B-SESSION",
-      "O",
-      "O",
       "I-DATE"
     ]
   },
   {
-    "text": "chiều trong hôm 5 tại việc cá nhân, chiều trong hôm 15/9 và ngày mai sáng",
+    "text": "sáng kìa và ngày mốt trưa",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE"
+    ]
+  },
+  {
+    "text": "Theo quyết định của phòng nhân sự, chiều trong hôm 23/3/2025 do việc quan trọng, tối 20/8 và chiều ngày mai bởi việc cá nhân",
     "ner_tags": [
       "B-SESSION",
       "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Trong tình hình hiện nay, từ chiều vào ngày 28/11/2025 đến hết ngày mốt sáng tại bị sốt",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "kìa chiều, mốt trưa và sáng vào hôm 11 việc gia đình",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-SESSION",
+      "B-DATE",
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O"
+    ]
+  },
+  {
+    "text": "sáng mai và tối mốt bởi việc cá nhân",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O"
+    ]
+  },
+  {
+    "text": "ngày mốt trưa và ngày kìa trưa",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON"
+    ]
+  },
+  {
+    "text": "trong ngày 24 tối tại bị ốm",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "hôm 5/11/2025 sáng, sáng trong ngày 2 vì bị sốt và sáng vào hôm 9",
+    "ner_tags": [
+      "B-SESSION",
       "O",
       "I-DATE",
       "B-REASON",
@@ -2735,7 +1151,81 @@
     ]
   },
   {
-    "text": "hôm 10/8/2025 tối",
+    "text": "vào hôm 25/9 trưa bị sốt và tối vào hôm 25/12 vì bị sốt theo hướng dẫn của ban giám đốc.",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "tối vào ngày 22/10/2025 tại việc cá nhân",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Theo thông báo của ban giám đốc, từ tối vào hôm 6/11/2025 đến hết hôm 24/4/2025 trưa",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "trưa ngày mai bị sốt và chiều 24/1",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON"
+    ]
+  },
+  {
+    "text": "sáng ngày 20/8",
     "ner_tags": [
       "B-SESSION",
       "O",
@@ -2743,7 +1233,76 @@
     ]
   },
   {
-    "text": "trưa ngày 26/7/2025",
+    "text": "trong ngày 21/9/2025 trưa và vào ngày 26 sáng tại lý do sức khỏe",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Theo quyết định của phòng nhân sự, từ trưa trong ngày 8/9 đến hết chiều trong hôm 28",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "trong hôm 7/4 chiều",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "trong hôm 28/3 trưa",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "chiều vào ngày 28",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "chiều ngày 11/11",
     "ner_tags": [
       "B-SESSION",
       "O",
@@ -2751,7 +1310,273 @@
     ]
   },
   {
-    "text": "từ sáng ngày kia tại việc cá nhân đến hết ngày 2 chiều",
+    "text": "vào hôm 19 tối vì các vấn đề nội bộ.",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "sáng vào ngày 15/5 và tối ngày 2/6/2025 do bị ốm",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O",
+      "I-DATE",
+      "B-REASON"
+    ]
+  },
+  {
+    "text": "trong ngày 27/11/2025 sáng",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "nay tối vì việc quan trọng theo hướng dẫn của ban giám đốc.",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Theo quyết định của phòng nhân sự, hôm 11/1 trưa",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "I-DATE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Theo thông báo của ban giám đốc, mai sáng tại việc quan trọng",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "từ chiều kìa đến hết ngày 18/8 chiều",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O"
+    ]
+  },
+  {
+    "text": "Theo thông báo của ban giám đốc, từ trong ngày 26/9 tối do việc gia đình đến hết vào hôm 6 tối bởi bị ốm",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "tối trong hôm 23 bởi bị sốt",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "tối hôm nay, ngày 5/1 trưa bởi không khoẻ và hôm 18/7 tối tại việc cá nhân",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Theo quyết định của phòng nhân sự, trưa nay tại việc cá nhân, chiều hôm nay do việc quan trọng và kìa trưa",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "trong ngày 1/10/2025 tối",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "Trong tình hình hiện nay, tối trong ngày 3",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "ngày mai sáng việc gia đình",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "sáng kia tại việc cá nhân và sáng nay vì các vấn đề nội bộ.",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Theo thông báo của ban giám đốc, tối trong hôm 10/8/2025",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "từ chiều ngày mai đến hết tối hôm 3/5/2025 tại việc gia đình theo hướng dẫn của ban giám đốc.",
     "ner_tags": [
       "B-SESSION",
       "B-DATE",
@@ -2760,6 +1585,487 @@
       "I-REASON",
       "I-REASON",
       "I-REASON",
+      "B-SESSION",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "từ vào hôm 15/6/2025 tối bởi việc cá nhân đến hết hôm 11 tối",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "từ chiều vào hôm 18/10/2025 đến hết vào hôm 28/4 trưa do việc quan trọng để đảm bảo hoạt động liên tục.",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "trưa hôm 11/10 do lý do sức khỏe để đảm bảo hoạt động liên tục.",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Theo thông báo của ban giám đốc, trong ngày 3/12/2025 trưa do việc cá nhân và kia sáng",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Trong bối cảnh công ty mở rộng quy mô, sáng hôm 27/6/2025",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "I-DATE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "chiều vào hôm 4/4 tại việc gia đình và chiều kia",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON"
+    ]
+  },
+  {
+    "text": "ngày 15/6/2025 trưa",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "sáng trong ngày 1/12 tại lý do sức khỏe",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "sáng trong ngày 21/2",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "hôm 10/11 trưa theo hướng dẫn của ban giám đốc.",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "I-DATE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "từ trưa kìa đến hết chiều mốt tại việc quan trọng",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "từ chiều 23/3 đến hết chiều ngày kìa do lý do sức khỏe",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Trong tình hình hiện nay, trong ngày 20 chiều",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Trong bối cảnh công ty mở rộng quy mô, trong ngày 8 trưa bởi không khoẻ",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "nay sáng, tối kia và chiều kia vì việc quan trọng",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "từ chiều hôm 6/6 tại việc cá nhân đến hết trưa trong hôm 25/3/2025",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "O"
+    ]
+  },
+  {
+    "text": "trong ngày 7 tối do bị ốm",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "sáng trong ngày 24/4/2025 không khoẻ",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "từ sáng vào hôm 13/1/2025 đến hết vào hôm 19 chiều do bị ốm theo hướng dẫn của ban giám đốc.",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "nay chiều tại bị sốt",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "ngày mốt chiều việc gia đình, trưa ngày mai tại lý do sức khỏe và chiều vào hôm 18 vì bị sốt",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O"
+    ]
+  },
+  {
+    "text": "hôm 13/9/2025 trưa không khoẻ để đảm bảo hoạt động liên tục.",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "từ 16/11 sáng đến hết chiều 7 vì các vấn đề nội bộ.",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O"
+    ]
+  },
+  {
+    "text": "chiều ngày 9/7/2025 vì các vấn đề nội bộ.",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "I-DATE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "chiều kìa vì việc gia đình để đảm bảo hoạt động liên tục.",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Theo quyết định của phòng nhân sự, từ nay chiều đến hết chiều mốt",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "chiều ngày kia vì bị ốm vì các vấn đề nội bộ.",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "từ 26/2/2025 tối đến hết tối hôm 4/10",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
       "B-SESSION",
       "O",
       "I-DATE",
@@ -2769,16 +2075,275 @@
     ]
   },
   {
-    "text": "chiều vào hôm 10/12",
+    "text": "trưa vào ngày 24 bị ốm",
     "ner_tags": [
       "B-SESSION",
       "O",
       "O",
-      "I-DATE"
+      "I-DATE",
+      "B-REASON",
+      "I-REASON"
     ]
   },
   {
-    "text": "vào ngày 10/5 sáng tại bị ốm",
+    "text": "chiều hôm nay do việc quan trọng",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "tối hôm 24/8 tại việc cá nhân vì các vấn đề nội bộ.",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "từ trưa hôm 11 việc cá nhân đến hết vào hôm 17 tối vì lý do sức khỏe",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "sáng kìa vì bị sốt theo quyết định của ban lãnh đạo.",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "từ trong ngày 18 tối không khoẻ đến hết chiều vào ngày 24/9",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "ngày kìa chiều vì việc gia đình và hôm 4/4/2025 trưa việc gia đình",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O"
+    ]
+  },
+  {
+    "text": "Theo quyết định của phòng nhân sự, ngày 7/12 tối",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "tối trong hôm 20/4/2025 vì việc cá nhân",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "ngày 12/10/2025 trưa vì các vấn đề nội bộ.",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "sáng ngày kìa tại lý do sức khỏe, sáng trong hôm 25/6 và chiều ngày kia vì việc cá nhân",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O"
+    ]
+  },
+  {
+    "text": "ngày mốt chiều bị ốm theo hướng dẫn của ban giám đốc.",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Trong bối cảnh công ty mở rộng quy mô, trưa trong hôm 9 tại việc gia đình",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "từ mai chiều đến hết kia chiều tại việc gia đình",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "trưa mốt bởi không khoẻ",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "từ chiều vào hôm 15 không khoẻ đến hết trong ngày 1/2/2025 chiều",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "chiều vào ngày 24/11 tại không khoẻ",
     "ner_tags": [
       "B-SESSION",
       "O",
@@ -2790,7 +2355,317 @@
     ]
   },
   {
-    "text": "trưa kìa, ngày 8/1 trưa và trưa ngày mốt bởi việc quan trọng",
+    "text": "chiều vào ngày 4 bởi bị ốm",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "chiều trong ngày 5/11 vì việc cá nhân",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "Trong bối cảnh công ty mở rộng quy mô, trưa ngày 18/7/2025",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "ngày mai sáng lý do sức khỏe, tối mốt và tối hôm 15",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION"
+    ]
+  },
+  {
+    "text": "tối vào ngày 21/1/2025 theo quyết định của ban lãnh đạo.",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "vào hôm 8/3 chiều",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "chiều trong ngày 18",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "vào ngày 12/4 chiều và mốt sáng việc quan trọng",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON"
+    ]
+  },
+  {
+    "text": "từ hôm nay tối vì lý do sức khỏe đến hết chiều ngày 15 do lý do sức khỏe",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "trưa vào hôm 14",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "trưa ngày kìa tại bị sốt",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "4/9/2025 tối không khoẻ, trưa ngày mai và tối mai",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "trong ngày 13/5/2025 trưa",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "sáng vào hôm 19/3 vì không khoẻ và sáng trong ngày 17 theo hướng dẫn của ban giám đốc.",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "từ mai tối bởi lý do sức khỏe đến hết vào hôm 1/6/2025 chiều",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "trưa vào hôm 11/3/2025 và kia trưa",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "ngày mốt trưa, ngày 25/7 trưa và trưa hôm nay theo quyết định của ban lãnh đạo.",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON"
+    ]
+  },
+  {
+    "text": "Trong tình hình hiện nay, tối ngày mai do bị sốt",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "từ tối trong hôm 26 đến hết hôm nay tối việc quan trọng",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O"
+    ]
+  },
+  {
+    "text": "từ mai tối đến hết mai chiều",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE"
+    ]
+  },
+  {
+    "text": "sáng 23 do bị sốt",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "trưa nay vì bị ốm và trưa vào ngày 23/8 theo quyết định của ban lãnh đạo.",
     "ner_tags": [
       "B-SESSION",
       "B-DATE",
@@ -2799,21 +2674,659 @@
       "I-REASON",
       "B-SESSION",
       "O",
+      "O",
       "I-DATE",
       "B-REASON",
       "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "từ sáng mai đến hết chiều hôm nay vì việc gia đình",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "vào hôm 6 sáng, kia tối và trong hôm 9 sáng",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "sáng vào hôm 5 vì bị sốt",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "chiều nay, mốt tối và ngày mốt sáng để đảm bảo hoạt động liên tục.",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "tối hôm 10 không khoẻ",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "sáng 11/10 lý do sức khỏe",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
       "I-REASON",
       "I-REASON",
       "I-REASON"
     ]
   },
   {
-    "text": "trưa trong ngày 14",
+    "text": "Trong tình hình hiện nay, từ 27/7/2025 chiều bởi việc cá nhân đến hết tối ngày kìa tại bị sốt",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "vào ngày 24 tối vì các vấn đề nội bộ.",
     "ner_tags": [
       "B-SESSION",
       "O",
       "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "nay sáng bởi bị ốm",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "từ vào ngày 18/6/2025 tối đến hết ngày mốt chiều bị sốt",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "từ ngày kìa chiều đến hết trưa kia vì bị ốm để đảm bảo hoạt động liên tục.",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "ngày 6 sáng và chiều hôm 15/8/2025",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION"
+    ]
+  },
+  {
+    "text": "hôm 8/2/2025 trưa",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
       "I-DATE"
+    ]
+  },
+  {
+    "text": "trong ngày 7/7 sáng tại bị ốm, tối mai do việc quan trọng và 12/2/2025 trưa vì bị sốt",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O"
+    ]
+  },
+  {
+    "text": "từ chiều vào hôm 3/8/2025 không khoẻ đến hết ngày 11 sáng",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "trong ngày 21/3 chiều tại không khoẻ, trong ngày 11/6/2025 trưa và sáng kia tại lý do sức khỏe",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "tối trong ngày 8/8 tại việc gia đình vì các vấn đề nội bộ.",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "vào ngày 2 trưa vì bị sốt để đảm bảo hoạt động liên tục.",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "tối vào hôm 17/7 theo quyết định của ban lãnh đạo.",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Theo thông báo của ban giám đốc, sáng trong ngày 2/1",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "trưa kia và chiều ngày mốt",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION"
+    ]
+  },
+  {
+    "text": "sáng nay không khoẻ theo hướng dẫn của ban giám đốc.",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Trong tình hình hiện nay, từ chiều mốt đến hết trong ngày 18/9 chiều",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O"
+    ]
+  },
+  {
+    "text": "Trong bối cảnh công ty mở rộng quy mô, từ mai tối đến hết vào hôm 14/2 chiều bởi việc quan trọng",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "từ trưa trong ngày 22 việc gia đình đến hết sáng ngày mốt do bị ốm theo quyết định của ban lãnh đạo.",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "sáng ngày kia, ngày kia tối và chiều ngày mốt",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON"
+    ]
+  },
+  {
+    "text": "tối mốt lý do sức khỏe",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "mai tối bởi việc gia đình và ngày kìa tối",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "O"
+    ]
+  },
+  {
+    "text": "kìa sáng, chiều ngày kìa bởi bị sốt và tối trong hôm 15/11 tại lý do sức khỏe",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "từ sáng ngày kìa đến hết sáng hôm 10/9 theo quyết định của ban lãnh đạo.",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "kia trưa bởi lý do sức khỏe, trưa nay và tối mai",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "từ ngày kìa tối đến hết ngày mai chiều tại việc cá nhân",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-SESSION",
+      "B-DATE",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "3/10 sáng vì việc quan trọng",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON"
+    ]
+  },
+  {
+    "text": "sáng hôm 5/12/2025",
+    "ner_tags": [
+      "B-SESSION",
+      "O",
+      "I-DATE"
+    ]
+  },
+  {
+    "text": "Theo thông báo của ban giám đốc, chiều kia vì không khoẻ, trưa kia vì việc gia đình và kia tối",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "B-DATE",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "từ sáng 8 đến hết tối kia vì bị sốt",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O"
+    ]
+  },
+  {
+    "text": "Trong bối cảnh công ty mở rộng quy mô, từ tối kìa vì lý do sức khỏe đến hết trưa vào hôm 9/3/2025 tại không khoẻ",
+    "ner_tags": [
+      "B-SESSION",
+      "B-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "I-REASON",
+      "B-SESSION",
+      "O",
+      "O",
+      "I-DATE",
+      "B-REASON",
+      "I-REASON",
+      "I-REASON",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O",
+      "O"
     ]
   }
 ]

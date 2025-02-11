@@ -23,7 +23,6 @@ model.to(device)
 # ---------------------------
 # Các thành phần sinh dữ liệu (cho dataset)
 # ---------------------------
-# (Danh sách này vẫn được dùng để huấn luyện, mặc dù API không sử dụng intro)
 intro_phrases = [
     "Tôi xin nghỉ",
     "Tôi xin phép nghỉ",
@@ -99,6 +98,37 @@ reason_options = [
 ]
 
 connectors = ["và", "cùng với", "với"]
+
+# Danh sách ngữ cảnh bổ sung (context) để thêm vào đầu hoặc cuối câu
+context_phrases_begin = [
+    "Trong bối cảnh công ty mở rộng quy mô,",
+    "Theo thông báo của ban giám đốc,",
+    "Trong tình hình hiện nay,",
+    "Theo quyết định của phòng nhân sự,"
+]
+
+context_phrases_end = [
+    "theo hướng dẫn của ban giám đốc.",
+    "vì các vấn đề nội bộ.",
+    "để đảm bảo hoạt động liên tục.",
+    "theo quyết định của ban lãnh đạo."
+]
+
+def add_context(sentence):
+    """
+    Với một xác suất, thêm ngữ cảnh vào đầu hoặc cuối câu.
+    """
+    r = random.random()
+    if r < 0.33:
+        # Thêm ngữ cảnh ở đầu câu
+        context = random.choice(context_phrases_begin)
+        return context + " " + sentence
+    elif r < 0.66:
+        # Thêm ngữ cảnh ở cuối câu
+        context = random.choice(context_phrases_end)
+        return sentence + " " + context
+    else:
+        return sentence
 
 # ---------------------------
 # Hàm xử lý ngày
@@ -230,17 +260,45 @@ def generate_complex_sample():
 def generate_sample_wrapper():
     """
     Với một xác suất, sử dụng mẫu phức tạp; ngược lại sử dụng mẫu đơn giản.
+    Sau đó, thêm ngữ cảnh vào đầu hoặc cuối câu (với một xác suất nhất định).
     Trả về tuple: (sentence, meta)  
     meta: {"requests": [req_meta, ...]}
     """
     if random.random() < 0.4:
-        return generate_complex_sample()
+        sentence, meta = generate_complex_sample()
     else:
-        # Mẫu đơn giản: chỉ một yêu cầu nghỉ
         req_text, req_meta = generate_single_request()
         sentence = req_text
         meta = {"requests": [req_meta]}
-        return sentence, meta
+    
+    # Thêm ngữ cảnh vào đầu hoặc cuối câu với xác suất 50%
+    if random.random() < 0.5:
+        sentence = add_context(sentence)
+    return sentence, meta
+
+def add_context(sentence):
+    """
+    Thêm ngữ cảnh vào đầu hoặc cuối câu.
+    """
+    r = random.random()
+    if r < 0.33:
+        context = random.choice([
+            "Trong bối cảnh công ty mở rộng quy mô,",
+            "Theo thông báo của ban giám đốc,",
+            "Trong tình hình hiện nay,",
+            "Theo quyết định của phòng nhân sự,"
+        ])
+        return context + " " + sentence
+    elif r < 0.66:
+        context = random.choice([
+            "theo hướng dẫn của ban giám đốc.",
+            "vì các vấn đề nội bộ.",
+            "để đảm bảo hoạt động liên tục.",
+            "theo quyết định của ban lãnh đạo."
+        ])
+        return sentence + " " + context
+    else:
+        return sentence
 
 def generate_token_labels_from_meta(sentence, meta):
     """
@@ -252,23 +310,22 @@ def generate_token_labels_from_meta(sentence, meta):
                      (token đầu tiên "B-DATE", sau đó "I-DATE");
                     nếu date_type == "relative": toàn bộ token gán, token đầu tiên "B-DATE", sau đó "I-DATE"
           + Reason: nếu có, token đầu tiên "B-REASON", sau đó "I-REASON"
-      - Các từ nối (như "và", ",", "từ", "đến hết",...) được gán "O"
+      - Các từ nối (như "và", ",", "từ", "đến hết", ...) được gán "O"
     """
     tokens = sentence.split()
     constructed_tokens = []
     constructed_labels = []
     
-    # Xử lý từng request theo thứ tự xuất hiện trong meta
     for idx, req in enumerate(meta["requests"]):
-        # Nếu có nhiều request, giả sử rằng từ nối đã có trong câu (không thêm token mới)
         if idx > 0:
+            # Giả sử rằng từ nối đã có trong câu (không thêm token nối mới)
             pass
-        # Xử lý phần session
+        # Session
         session_tokens = req["session"].split() if req["session"] else []
         for token in session_tokens:
             constructed_tokens.append(token)
             constructed_labels.append("B-SESSION")
-        # Xử lý phần date
+        # Date
         date_tokens = req["date"].split() if req["date"] else []
         if req.get("date_type", "relative") == "numeric":
             for i, token in enumerate(date_tokens):
@@ -290,7 +347,7 @@ def generate_token_labels_from_meta(sentence, meta):
                 else:
                     constructed_tokens.append(token)
                     constructed_labels.append("I-DATE")
-        # Xử lý phần reason
+        # Reason
         if req["reason"]:
             reason_tokens = req["reason"].split()
             for i, token in enumerate(reason_tokens):
@@ -301,7 +358,6 @@ def generate_token_labels_from_meta(sentence, meta):
                     constructed_tokens.append(token)
                     constructed_labels.append("I-REASON")
     
-    # Điều chỉnh để khớp với số token ban đầu của sentence
     original_tokens = sentence.split()
     if len(constructed_tokens) < len(original_tokens):
         constructed_labels.extend(["O"] * (len(original_tokens) - len(constructed_tokens)))
@@ -311,11 +367,11 @@ def generate_token_labels_from_meta(sentence, meta):
     return constructed_labels
 
 # ---------------------------
-# Sinh dataset với 10,000 mẫu duy nhất
+# Sinh dataset với 50,000 mẫu duy nhất có cấu trúc khác biệt và thêm ngữ cảnh
 # ---------------------------
 unique_samples = {}
 attempts = 0
-target_samples = 10000
+target_samples = 50000
 
 while len(unique_samples) < target_samples:
     sentence, meta = generate_sample_wrapper()

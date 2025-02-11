@@ -3,6 +3,7 @@ import torch
 from transformers import PreTrainedTokenizerFast, AutoModelForTokenClassification, Trainer, TrainingArguments
 from datasets import load_dataset
 import evaluate
+import os
 
 # 1. Tải dataset
 data_files = {
@@ -29,13 +30,15 @@ model = AutoModelForTokenClassification.from_pretrained(
     id2label=id2label,
     label2id=label2id
 )
-# Cập nhật kích thước embedding cho mô hình theo tokenizer mới (nếu có token mới được thêm vào)
+# Cập nhật kích thước embedding theo tokenizer mới (nếu có token mới được thêm vào)
 model.resize_token_embeddings(len(tokenizer))
 
-# 5. Hàm tokenize và gán nhãn
-# Ta tách text thành danh sách từ dựa trên khoảng trắng và sử dụng is_split_into_words=True.
+# 5. Cấu hình thiết bị (GPU nếu có, ngược lại CPU)
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+model.to(device)
+
+# 6. Hàm tokenize và gán nhãn
 def tokenize_and_align_labels(examples):
-    # Tách chuỗi thành danh sách các từ
     texts = [text.split() for text in examples["text"]]
     tokenized_inputs = tokenizer(
         texts,
@@ -44,7 +47,6 @@ def tokenize_and_align_labels(examples):
         padding="max_length",
         max_length=128
     )
-    
     all_labels = []
     for i, word_labels in enumerate(examples["ner_tags"]):
         word_ids = tokenized_inputs.word_ids(batch_index=i)
@@ -53,8 +55,8 @@ def tokenize_and_align_labels(examples):
         for word_idx in word_ids:
             if word_idx is None:
                 label_ids.append(-100)
-            elif word_idx >= len(word_labels):
-                label_ids.append(-100)
+            elif word_idx != previous_word_idx:
+                label_ids.append(label2id[word_labels[word_idx]])
             else:
                 label_ids.append(label2id[word_labels[word_idx]])
             previous_word_idx = word_idx
@@ -64,35 +66,37 @@ def tokenize_and_align_labels(examples):
 
 encoded_dataset = dataset.map(tokenize_and_align_labels, batched=True)
 
-# 6. Cấu hình huấn luyện
+# 7. Cấu hình huấn luyện (tối ưu cho GPU)
 training_args = TrainingArguments(
     output_dir="phobert_leave_ner_results",
-    evaluation_strategy="epoch",  # Cảnh báo FutureWarning có thể xuất hiện, nhưng lỗi chính là do chiến lược lưu.
+    evaluation_strategy="epoch",
     save_strategy="epoch",
     learning_rate=2e-5,
     per_device_train_batch_size=16,
     per_device_eval_batch_size=16,
+    gradient_accumulation_steps=2,  # Effective batch size = 32 nếu GPU không đủ bộ nhớ cho batch 32
     num_train_epochs=3,
     weight_decay=0.01,
     logging_dir="phobert_leave_ner_logs",
     logging_steps=10,
     save_total_limit=2,
     load_best_model_at_end=True,
-    report_to=[]
+    fp16=True,      # Sử dụng mixed precision training để giảm bộ nhớ GPU và tăng tốc độ
+    report_to=[]    # Tắt báo cáo qua W&B nếu không cần thiết
 )
 
-# 7. Tải metric seqeval để đánh giá NER
+# 8. Tải metric seqeval để đánh giá NER
 metric = evaluate.load("seqeval")
 
 def compute_metrics(p):
     predictions, labels = p
     predictions = np.argmax(predictions, axis=2)
     true_predictions = [
-        [id2label[pred] for (pred, lab) in zip(prediction, label) if lab != -100]
+        [id2label[p] for (p, l) in zip(prediction, label) if l != -100]
         for prediction, label in zip(predictions, labels)
     ]
     true_labels = [
-        [id2label[lab] for (pred, lab) in zip(prediction, label) if lab != -100]
+        [id2label[l] for (p, l) in zip(prediction, label) if l != -100]
         for prediction, label in zip(predictions, labels)
     ]
     results = metric.compute(predictions=true_predictions, references=true_labels)
@@ -103,16 +107,16 @@ def compute_metrics(p):
         "accuracy": results["overall_accuracy"],
     }
 
-# 8. Tạo Trainer
+# 9. Tạo Trainer, đảm bảo mô hình được chuyển sang GPU
 trainer = Trainer(
-    model=model,
+    model=model,  # Model đã được chuyển sang device trước đó
     args=training_args,
     train_dataset=encoded_dataset["train"],
     eval_dataset=encoded_dataset["validation"],
     compute_metrics=compute_metrics,
 )
 
-# 9. Huấn luyện và lưu mô hình, tokenizer
+# 10. Huấn luyện và lưu mô hình, tokenizer
 if __name__ == "__main__":
     trainer.train()
     model.save_pretrained("phobert_leave_ner_finetuned")

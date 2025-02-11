@@ -4,6 +4,8 @@ import numpy as np
 from transformers import PreTrainedTokenizerFast, AutoModelForTokenClassification
 import os
 from datetime import datetime, timedelta
+import random
+import json
 
 app = Flask(__name__, static_folder="demo", static_url_path="")
 
@@ -73,16 +75,16 @@ def extract_leave_info(text):
     """
     Xử lý văn bản xin nghỉ phép để trích xuất thông tin:
       - "Nhân viên xin nghỉ": giá trị cố định "Test"
-      - "Thời gian nghỉ": mảng các chuỗi, mỗi chuỗi kết hợp thông tin buổi nghỉ và ngày nghỉ.
-      - "Lý do": mảng các chuỗi, mỗi chuỗi là lý do tương ứng với từng yêu cầu (hoặc "Không có").
+      - "Thời gian nghỉ": mảng các chuỗi, mỗi chuỗi kết hợp thông tin buổi và ngày.
+      - "Lý do": mảng các chuỗi, mỗi chuỗi là lý do tương ứng với từng yêu cầu (nếu có, nếu không có thì "Không có").
     Quá trình:
       1. Tokenize văn bản và dự đoán nhãn.
-      2. Tách các yêu cầu nghỉ dựa trên từ nối "và".
+      2. Tách các yêu cầu nghỉ dựa trên từ nối "và" (hoặc dấu phẩy).
       3. Với mỗi yêu cầu, trích xuất các token có nhãn SESSION, DATE và REASON.
          - Kết hợp SESSION và DATE thành chuỗi "SESSION processed_date".
          - Lấy lý do từ các token REASON (nếu có).
     """
-    # Tokenize văn bản và dự đoán nhãn
+    # Tokenize và dự đoán nhãn
     words = text.split()
     tokenized_inputs = tokenizer(
         words,
@@ -120,11 +122,11 @@ def extract_leave_info(text):
             prev_word_idx = word_idx
     word_tag_pairs = list(zip(words, predicted_labels))
     
-    # Tách các yêu cầu nghỉ dựa trên từ nối "và"
+    # Tách các yêu cầu nghỉ dựa trên từ nối "và" hoặc dấu phẩy
     segments = []
     current_segment = []
     for word, label in word_tag_pairs:
-        if word.lower() == "và" and label == "O":
+        if word.lower() in ["và", ","] and label == "O":
             if current_segment:
                 segments.append(current_segment)
                 current_segment = []
@@ -146,6 +148,7 @@ def extract_leave_info(text):
                 date_tokens.append(word)
             elif label in ["B-REASON", "I-REASON"]:
                 reason_tokens.append(word)
+        # Xử lý thông tin thời gian nghỉ (gộp buổi và ngày)
         if session_tokens and date_tokens:
             session_str = " ".join(session_tokens)
             date_str = " ".join(date_tokens)
@@ -155,7 +158,7 @@ def extract_leave_info(text):
             leave_times.append(" ".join(session_tokens))
         elif date_tokens:
             leave_times.append(process_date(" ".join(date_tokens)))
-        
+        # Xử lý lý do
         if reason_tokens:
             reason_str = " ".join(reason_tokens)
             leave_reasons.append(reason_str)
