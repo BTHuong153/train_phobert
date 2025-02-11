@@ -18,12 +18,16 @@ model.eval()
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model.to(device)
 
+# ---------------------------
+# Hàm xử lý ngày
+# ---------------------------
 def process_date(date_str):
     """
-    Chuyển đổi chuỗi biểu thị ngày thành định dạng YYYY-MM-DD.
-    Nếu chuỗi là một biểu thức tương đối như "hôm nay", "ngày mai", "ngày kia",...
-    thì tính ngày dựa trên ngày hiện tại.
-    Nếu là định dạng số (ví dụ "6/2"), chuyển sang định dạng với năm hiện tại (hoặc năm tiếp theo nếu cần).
+    Chuyển đổi chuỗi biểu thị ngày thành định dạng dd/mm/YYYY.
+    Nếu chuỗi là biểu thức tương đối (ví dụ "hôm nay", "ngày mai", "ngày kia",...),
+    tính ngày dựa trên ngày hiện tại.
+    Nếu là định dạng số (ví dụ "6/2" hoặc "ngày 6/2"), chuyển sang định dạng dd/mm/YYYY
+    với năm hiện tại (hoặc năm sau nếu tháng nhỏ hơn tháng hiện tại).
     """
     relative_expressions = {
         "hôm nay": 0,
@@ -32,7 +36,8 @@ def process_date(date_str):
         "mai": 1,
         "ngày kia": 2,
         "kia": 2,
-        "ngày mốt": 2,
+        "ngày môt": 2,
+        "môt": 2,
         "mốt": 2,
         "ngày kìa": 3,
         "kìa": 3
@@ -43,7 +48,6 @@ def process_date(date_str):
         new_date = datetime.now() + timedelta(days=delta)
         return new_date.strftime("%d/%m/%Y")
     else:
-        # Giả sử định dạng là "day/month"
         try:
             parts = date_str.split("/")
             if len(parts) == 2:
@@ -51,20 +55,35 @@ def process_date(date_str):
                 day = int(day)
                 month = int(month)
                 year = datetime.now().year
-                # Nếu tháng nhỏ hơn tháng hiện tại, có thể là năm sau
                 if month < datetime.now().month:
                     year += 1
-                return f"-{day:02d}/{month:02d}/{year}"
+                return f"{day:02d}/{month:02d}/{year}"
+            elif len(parts) == 3:
+                day, month, year = parts
+                return f"{int(day):02d}/{int(month):02d}/{year}"
             else:
                 return date_str
         except Exception as e:
             return date_str
 
+# ---------------------------
+# API để trích xuất thông tin xin nghỉ
+# ---------------------------
 def extract_leave_info(text):
-    # Chuyển văn bản thành danh sách các từ dựa trên khoảng trắng
+    """
+    Xử lý văn bản xin nghỉ phép để trích xuất thông tin:
+      - "Nhân viên xin nghỉ": giá trị cố định "Test"
+      - "Thời gian nghỉ": mảng các chuỗi, mỗi chuỗi kết hợp thông tin buổi nghỉ và ngày nghỉ.
+      - "Lý do": mảng các chuỗi, mỗi chuỗi là lý do tương ứng với từng yêu cầu (hoặc "Không có").
+    Quá trình:
+      1. Tokenize văn bản và dự đoán nhãn.
+      2. Tách các yêu cầu nghỉ dựa trên từ nối "và".
+      3. Với mỗi yêu cầu, trích xuất các token có nhãn SESSION, DATE và REASON.
+         - Kết hợp SESSION và DATE thành chuỗi "SESSION processed_date".
+         - Lấy lý do từ các token REASON (nếu có).
+    """
+    # Tokenize văn bản và dự đoán nhãn
     words = text.split()
-    
-    # Tokenize với is_split_into_words=True để đảm bảo mapping giữa các token và từ gốc
     tokenized_inputs = tokenizer(
         words,
         is_split_into_words=True,
@@ -74,8 +93,6 @@ def extract_leave_info(text):
         max_length=128
     )
     tokenized_inputs = {k: v.to(device) for k, v in tokenized_inputs.items()}
-    
-    # Lấy mapping giữa token và từ gốc
     word_ids = tokenizer(
         words,
         is_split_into_words=True,
@@ -84,12 +101,11 @@ def extract_leave_info(text):
         padding="max_length",
         max_length=128
     ).word_ids(batch_index=0)
-    
     with torch.no_grad():
         outputs = model(**tokenized_inputs)
     predictions = torch.argmax(outputs.logits, dim=2).cpu().numpy()[0]
     
-    # Lấy nhãn từ model.config.id2label; nếu key là str, chuyển đổi về int key
+    # Xử lý id2label
     id2label = model.config.id2label
     if isinstance(next(iter(id2label.keys())), str):
         id2label = {int(k): v for k, v in id2label.items()}
@@ -104,41 +120,57 @@ def extract_leave_info(text):
             prev_word_idx = word_idx
     word_tag_pairs = list(zip(words, predicted_labels))
     
-    # Nhóm các token theo nhãn
-    current_date_tokens = []
-    current_session_tokens = []
-    current_reason_tokens = []
-    for word, tag in word_tag_pairs:
-        if tag in ["B-DATE", "I-DATE"]:
-            current_date_tokens.append(word)
-        elif tag in ["B-SESSION", "I-SESSION"]:
-            current_session_tokens.append(word.lower())
-        elif tag in ["B-REASON", "I-REASON"]:
-            current_reason_tokens.append(word)
+    # Tách các yêu cầu nghỉ dựa trên từ nối "và"
+    segments = []
+    current_segment = []
+    for word, label in word_tag_pairs:
+        if word.lower() == "và" and label == "O":
+            if current_segment:
+                segments.append(current_segment)
+                current_segment = []
+        else:
+            current_segment.append((word, label))
+    if current_segment:
+        segments.append(current_segment)
     
-    # Xử lý ngày: ghép các token thành chuỗi, chuyển đổi sang định dạng YYYY-MM-DD
-    date_extracted = " ".join(current_date_tokens).strip() if current_date_tokens else ""
-    processed_date = process_date(date_extracted) if date_extracted else ""
+    leave_times = []
+    leave_reasons = []
+    for segment in segments:
+        session_tokens = []
+        date_tokens = []
+        reason_tokens = []
+        for word, label in segment:
+            if label in ["B-SESSION", "I-SESSION"]:
+                session_tokens.append(word)
+            elif label in ["B-DATE", "I-DATE"]:
+                date_tokens.append(word)
+            elif label in ["B-REASON", "I-REASON"]:
+                reason_tokens.append(word)
+        if session_tokens and date_tokens:
+            session_str = " ".join(session_tokens)
+            date_str = " ".join(date_tokens)
+            processed_date = process_date(date_str)
+            leave_times.append(f"{session_str} {processed_date}")
+        elif session_tokens:
+            leave_times.append(" ".join(session_tokens))
+        elif date_tokens:
+            leave_times.append(process_date(" ".join(date_tokens)))
+        
+        if reason_tokens:
+            reason_str = " ".join(reason_tokens)
+            leave_reasons.append(reason_str)
     
-    # Ghép các token cho session và reason
-    session_extracted = " ".join(current_session_tokens).strip() if current_session_tokens else ""
-    reason_extracted = " ".join(current_reason_tokens).strip() if current_reason_tokens else ""
-    
-    # Trả về kết quả với các khóa tiếng Việt
     result = {
-        "employee_id": "Test",  # Trong thực tế, lấy từ thông tin người dùng
-        "session": session_extracted if session_extracted else "Không xác định",
-        "date": processed_date if processed_date else "Không xác định",
-        "reason": reason_extracted if reason_extracted else "Không có"
+        "employee": "Test",
+        "leave_times": leave_times if leave_times else ["Không xác định"],
+        "leave_reasons": leave_reasons if leave_reasons else ["Không có"]
     }
     return result
 
-# Route để phục vụ giao diện HTML demo
 @app.route("/")
 def index():
     return send_from_directory(app.static_folder, "index.html")
 
-# Endpoint API để trích xuất thông tin xin nghỉ
 @app.route("/api/extract_leave", methods=["POST"])
 def extract_leave():
     data = request.get_json()

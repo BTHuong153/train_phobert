@@ -1,14 +1,27 @@
-import random
-import json
+from flask import Flask, request, jsonify, send_from_directory
+import torch
+import numpy as np
+from transformers import PreTrainedTokenizerFast, AutoModelForTokenClassification
 import os
+from datetime import datetime, timedelta
 
-# Tạo thư mục data nếu chưa tồn tại
-if not os.path.exists("data"):
-    os.makedirs("data")
+app = Flask(__name__, static_folder="demo", static_url_path="")
 
-# Các thành phần cấu trúc câu
+# Đường dẫn tới model đã fine-tuned (đã lưu từ quá trình huấn luyện)
+MODEL_PATH = "phobert_leave_ner_finetuned"
 
-# Các cụm mở đầu khác nhau
+# Tải tokenizer và model
+tokenizer = PreTrainedTokenizerFast.from_pretrained(MODEL_PATH)
+model = AutoModelForTokenClassification.from_pretrained(MODEL_PATH)
+model.eval()
+
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+model.to(device)
+
+# ---------------------------
+# Các thành phần sinh dữ liệu (cho dataset)
+# ---------------------------
+# (Danh sách này vẫn được dùng để huấn luyện, mặc dù API không sử dụng intro)
 intro_phrases = [
     "Tôi xin nghỉ",
     "Tôi xin phép nghỉ",
@@ -25,10 +38,8 @@ intro_phrases = [
     "Tôi mong muốn được nghỉ"
 ]
 
-# Các cụm chỉ buổi nghỉ
 session_phrases = ["sáng", "trưa", "chiều", "tối"]
 
-# Các mẫu định dạng ngày cụ thể (numeric)
 date_templates_numeric = [
     "{day}",
     "ngày {day}",
@@ -53,7 +64,6 @@ date_templates_numeric = [
     "trong hôm {day}/{month}/{year}"
 ]
 
-# Các cụm từ chỉ ngày không cụ thể
 date_expressions = [
     "hôm nay",
     "ngày mai",
@@ -67,14 +77,13 @@ date_expressions = [
     "kìa"
 ]
 
-# Các mẫu lý do (có thể có hoặc không)
 reason_templates = [
     "do {reason}",
     "vì {reason}",
     "bởi {reason}",
     "tại {reason}",
     "{reason}",
-    ""  # không có lý do
+    ""
 ]
 
 reason_options = [
@@ -87,29 +96,80 @@ reason_options = [
     "bị sốt"
 ]
 
-def generate_numeric_date():
-    """Sinh một chuỗi ngày theo định dạng số với một trong các template."""
-    date_template = random.choice(date_templates_numeric)
-    day = random.randint(1, 28)
-    month = random.randint(1, 12)
-    year = 2025  # cố định năm
-    return date_template.format(day=day, month=month, year=year)
+connectors = ["và", "cùng với", "với"]
 
+# ---------------------------
+# Hàm xử lý ngày
+# ---------------------------
+def process_date(date_str):
+    """
+    Chuyển đổi chuỗi biểu thị ngày thành định dạng dd/mm/YYYY.
+    Nếu chuỗi là biểu thức tương đối (ví dụ "hôm nay", "ngày mai", "ngày kia",...),
+    tính ngày dựa trên ngày hiện tại.
+    Nếu là định dạng số (ví dụ "6/2" hoặc "ngày 6/2"), chuyển sang định dạng dd/mm/YYYY
+    với năm hiện tại (hoặc năm sau nếu tháng nhỏ hơn tháng hiện tại).
+    """
+    relative_expressions = {
+        "hôm nay": 0,
+        "nay": 0,
+        "ngày mai": 1,
+        "mai": 1,
+        "ngày kia": 2,
+        "kia": 2,
+        "ngày môt": 2,
+        "môt": 2,
+        "mốt": 2,
+        "ngày kìa": 3,
+        "kìa": 3
+    }
+    date_str_lower = date_str.lower().strip()
+    if date_str_lower in relative_expressions:
+        delta = relative_expressions[date_str_lower]
+        new_date = datetime.now() + timedelta(days=delta)
+        return new_date.strftime("%d/%m/%Y")
+    else:
+        try:
+            parts = date_str.split("/")
+            if len(parts) == 2:
+                day, month = parts
+                day = int(day)
+                month = int(month)
+                year = datetime.now().year
+                if month < datetime.now().month:
+                    year += 1
+                return f"{day:02d}/{month:02d}/{year}"
+            elif len(parts) == 3:
+                day, month, year = parts
+                return f"{int(day):02d}/{int(month):02d}/{year}"
+            else:
+                return date_str
+        except Exception as e:
+            return date_str
+
+# ---------------------------
+# Hàm sinh dữ liệu mẫu (Dataset Generation)
+# ---------------------------
 def generate_single_request():
     """
-    Sinh một yêu cầu nghỉ (leave request) gồm:
+    Sinh một yêu cầu nghỉ gồm:
       - Buổi nghỉ (session)
       - Ngày nghỉ (date): sử dụng định dạng numeric hoặc từ chỉ ngày.
       - Lý do nghỉ (reason), có thể trống.
-    Trả về tuple: (request_text, request_meta) 
-      request_meta là dict với keys: "session", "date", "reason"
+    Trả về tuple: (request_text, request_meta)
+      request_meta là dict với keys: "session", "date", "reason", "date_type"
     """
     session = random.choice(session_phrases)
-    use_numeric_date = random.random() < 0.5  # 50% chance
+    use_numeric_date = random.random() < 0.5
     if use_numeric_date:
-        date_str = generate_numeric_date()
+        date_str = random.choice(date_templates_numeric).format(
+            day=random.randint(1,28),
+            month=random.randint(1,12),
+            year=2025
+        )
+        date_type = "numeric"
     else:
         date_str = random.choice(date_expressions)
+        date_type = "relative"
     
     reason_template = random.choice(reason_templates)
     if reason_template.strip():
@@ -118,66 +178,89 @@ def generate_single_request():
     else:
         reason_str = ""
     
-    if reason_str:
-        req_text = f"{session} {date_str} {reason_str}"
-    else:
+    template_choice = random.choice([1, 2, 3, 4])
+    if template_choice == 1:
         req_text = f"{session} {date_str}"
-    req_meta = {"session": session, "date": date_str, "reason": reason_str}
+    elif template_choice == 2:
+        req_text = f"{date_str} {session}"
+    elif template_choice == 3:
+        req_text = f"{session} {date_str} {reason_str}" if reason_str else f"{session} {date_str}"
+    elif template_choice == 4:
+        req_text = f"{date_str} {session} {reason_str}" if reason_str else f"{date_str} {session}"
+    
+    req_meta = {"session": session, "date": date_str, "reason": reason_str, "date_type": date_type}
     return req_text, req_meta
 
-def generate_sample():
+def generate_complex_sample():
     """
-    Sinh một câu mẫu cho việc nghỉ nhiều buổi.
-    Cấu trúc: {intro} {request1} [và {request2}]
+    Sinh mẫu văn bản xin nghỉ phức tạp với nhiều kiểu cấu trúc:
+      - Kiểu "discrete": nhiều yêu cầu nghỉ rời rạc, ví dụ:
+            "sáng hôm nay, trưa ngày mai, và chiều ngày kia do bị sốt"
+      - Kiểu "continuous": biểu thức liên tục, ví dụ:
+            "từ sáng mai đến hết chiều kia do việc gia đình"
     Trả về tuple: (sentence, meta)
-      meta là dict: {"intro": intro, "requests": [req_meta1, req_meta2 (nếu có)]}
+      meta: {"requests": [req_meta1, req_meta2, ...]}
     """
-    intro = random.choice(intro_phrases)
-    # Quyết định số yêu cầu nghỉ: 1 hoặc 2
-    num_requests = 2 if random.random() < 0.5 else 1
+    complex_type = random.choice(["discrete", "continuous"])
     
-    requests_text = []
-    requests_meta = []
-    for _ in range(num_requests):
-        req_text, req_meta = generate_single_request()
-        requests_text.append(req_text)
-        requests_meta.append(req_meta)
-    
-    if num_requests == 1:
-        sentence = f"{intro} {requests_text[0]}"
+    if complex_type == "discrete":
+        n = random.randint(2, 3)  # 2 hoặc 3 yêu cầu
+        requests_text = []
+        requests_meta = []
+        for _ in range(n):
+            req_text, req_meta = generate_single_request()
+            requests_text.append(req_text)
+            requests_meta.append(req_meta)
+        if n == 2:
+            sentence = " ".join([requests_text[0], "và", requests_text[1]])
+        else:
+            sentence = ", ".join(requests_text[:-1]) + " và " + requests_text[-1]
+        meta = {"requests": requests_meta}
+        return sentence, meta
     else:
-        sentence = f"{intro} " + " và ".join(requests_text)
-    
-    sentence = " ".join(sentence.split())
-    meta = {"intro": intro, "requests": requests_meta}
-    return sentence, meta
+        # continuous type: "từ {request_start} đến hết {request_end}"
+        req_text_start, req_meta_start = generate_single_request()
+        req_text_end, req_meta_end = generate_single_request()
+        sentence = f"từ {req_text_start} đến hết {req_text_end}"
+        meta = {"requests": [req_meta_start, req_meta_end]}
+        return sentence, meta
+
+def generate_sample_wrapper():
+    """
+    Với một xác suất, sử dụng mẫu phức tạp; ngược lại sử dụng mẫu đơn giản.
+    Trả về tuple: (sentence, meta)  
+    meta: {"requests": [req_meta, ...]}
+    """
+    if random.random() < 0.4:
+        return generate_complex_sample()
+    else:
+        # Mẫu đơn giản: chỉ một yêu cầu nghỉ
+        req_text, req_meta = generate_single_request()
+        sentence = req_text
+        meta = {"requests": [req_meta]}
+        return sentence, meta
 
 def generate_token_labels_from_meta(sentence, meta):
     """
-    Dựa vào meta (với key "intro" và "requests") để gán nhãn cho từng token.
+    Dựa vào meta (với key "requests") để gán nhãn cho từng token.
     Gán nhãn:
-      - Các token của phần intro: "O"
       - Các token của mỗi request:
-          + Buổi nghỉ: gán "B-SESSION" cho tất cả các token của phần này.
-          + Ngày nghỉ: token đầu tiên "B-DATE", các token sau "I-DATE".
-          + Lý do: token đầu tiên "B-REASON", các token sau "I-REASON".
-      - Các từ nối như "và" được gán "O".
+          + Session: toàn bộ token gán "B-SESSION"
+          + Date: nếu date_type == "numeric": chỉ gán nhãn cho token chứa chữ số 
+                     (token đầu tiên "B-DATE", sau đó "I-DATE");
+                    nếu date_type == "relative": toàn bộ token gán, token đầu tiên "B-DATE", sau đó "I-DATE"
+          + Reason: nếu có, token đầu tiên "B-REASON", sau đó "I-REASON"
+      - Các từ nối (như "và", ",", "từ", "đến hết",...) được gán "O"
     """
     tokens = sentence.split()
     constructed_tokens = []
     constructed_labels = []
     
-    # Phần intro
-    intro_tokens = meta["intro"].split()
-    constructed_tokens.extend(intro_tokens)
-    constructed_labels.extend(["O"] * len(intro_tokens))
-    
-    # Xử lý các request
+    # Xử lý từng request theo thứ tự xuất hiện trong meta
     for idx, req in enumerate(meta["requests"]):
-        # Nếu có nhiều request, thêm từ nối "và" giữa các request
+        # Nếu có nhiều request, giả sử rằng từ nối đã có trong câu (không thêm token mới)
         if idx > 0:
-            constructed_tokens.append("và")
-            constructed_labels.append("O")
+            pass
         # Xử lý phần session
         session_tokens = req["session"].split() if req["session"] else []
         for token in session_tokens:
@@ -185,13 +268,26 @@ def generate_token_labels_from_meta(sentence, meta):
             constructed_labels.append("B-SESSION")
         # Xử lý phần date
         date_tokens = req["date"].split() if req["date"] else []
-        for i, token in enumerate(date_tokens):
-            if i == 0:
-                constructed_tokens.append(token)
-                constructed_labels.append("B-DATE")
-            else:
-                constructed_tokens.append(token)
-                constructed_labels.append("I-DATE")
+        if req.get("date_type", "relative") == "numeric":
+            for i, token in enumerate(date_tokens):
+                if any(ch.isdigit() for ch in token):
+                    if i == 0:
+                        constructed_tokens.append(token)
+                        constructed_labels.append("B-DATE")
+                    else:
+                        constructed_tokens.append(token)
+                        constructed_labels.append("I-DATE")
+                else:
+                    constructed_tokens.append(token)
+                    constructed_labels.append("O")
+        else:
+            for i, token in enumerate(date_tokens):
+                if i == 0:
+                    constructed_tokens.append(token)
+                    constructed_labels.append("B-DATE")
+                else:
+                    constructed_tokens.append(token)
+                    constructed_labels.append("I-DATE")
         # Xử lý phần reason
         if req["reason"]:
             reason_tokens = req["reason"].split()
@@ -203,33 +299,41 @@ def generate_token_labels_from_meta(sentence, meta):
                     constructed_tokens.append(token)
                     constructed_labels.append("I-REASON")
     
-    # Nếu số token xây dựng không khớp với sentence ban đầu, điều chỉnh.
-    if len(constructed_tokens) < len(tokens):
-        constructed_labels.extend(["O"] * (len(tokens) - len(constructed_tokens)))
-    elif len(constructed_tokens) > len(tokens):
-        constructed_labels = constructed_labels[:len(tokens)]
+    # Điều chỉnh để khớp với số token ban đầu của sentence
+    original_tokens = sentence.split()
+    if len(constructed_tokens) < len(original_tokens):
+        constructed_labels.extend(["O"] * (len(original_tokens) - len(constructed_tokens)))
+    elif len(constructed_tokens) > len(original_tokens):
+        constructed_labels = constructed_labels[:len(original_tokens)]
     
     return constructed_labels
 
-# Tạo tập dataset với 1000 mẫu khác nhau
+# ---------------------------
+# Sinh dataset với 10,000 mẫu duy nhất
+# ---------------------------
 unique_samples = {}
-while len(unique_samples) < 1000:
-    sentence, meta = generate_sample()
+attempts = 0
+target_samples = 10000
+
+while len(unique_samples) < target_samples:
+    sentence, meta = generate_sample_wrapper()
     tokens = sentence.split()
     ner_tags = generate_token_labels_from_meta(sentence, meta)
     if len(tokens) != len(ner_tags):
         continue
     if sentence not in unique_samples:
         unique_samples[sentence] = ner_tags
+    attempts += 1
+    if attempts % 1000 == 0:
+        print("Attempts:", attempts, "Unique samples:", len(unique_samples))
 
 dataset_list = [{"text": text, "ner_tags": tags} for text, tags in unique_samples.items()]
-print(f"Generated {len(dataset_list)} unique samples.")
+print(f"Generated {len(dataset_list)} unique samples after {attempts} attempts.")
 
-# Lưu dataset vào file train.json
 with open("data/train.json", "w", encoding="utf-8") as f:
     json.dump(dataset_list, f, ensure_ascii=False, indent=2)
 
-# Tạo tập validation với 200 mẫu ngẫu nhiên từ dataset_list
+import random
 val_samples = random.sample(dataset_list, 200)
 with open("data/validation.json", "w", encoding="utf-8") as f:
     json.dump(val_samples, f, ensure_ascii=False, indent=2)

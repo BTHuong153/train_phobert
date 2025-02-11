@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Demo Trích Xuất Thông Tin Xin Nghỉ Phép</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 30px;
+        background-color: #f5f5f5;
+      }
+      h1 {
+        color: #333;
+      }
+      form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin-bottom: 20px;
+      }
+      textarea {
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+      }
+      button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        background-color: #28a745;
+        color: #fff;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #218838;
+      }
+      #result-container {
+        max-width: 600px;
+        margin-top: 20px;
+      }
+      .result {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .result-item {
+        margin-bottom: 10px;
+      }
+      .label {
+        font-weight: bold;
+        color: #333;
+      }
+      .value {
+        margin-left: 5px;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Demo Trích Xuất Thông Tin Xin Nghỉ Phép</h1>
+
+    <form id="leaveForm">
+      <label for="leaveText"
+        ><strong>Nhập nội dung xin nghỉ phép:</strong></label
+      ><br />
+      <textarea
+        id="leaveText"
+        name="leaveText"
+        placeholder="Ví dụ: Tôi xin nghỉ sáng ngày mai và chiều 6/2 do việc gia đình khẩn cấp..."
+      ></textarea
+      ><br />
+      <button type="submit">Trích Xuất Thông Tin</button>
+    </form>
+
+    <!-- Container để hiển thị kết quả -->
+    <div id="result-container"></div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .getElementById("leaveForm")
+          .addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const leaveText = document.getElementById("leaveText").value;
+            const container = document.getElementById("result-container");
+
+            // Hiển thị thông báo đang xử lý
+            container.innerHTML = "<p>Đang xử lý...</p>";
+
+            // Gửi yêu cầu POST tới API backend tại endpoint /api/extract_leave
+            fetch("/api/extract_leave", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({ text: leaveText }),
+            })
+              .then((response) => {
+                if (!response.ok) {
+                  throw new Error("Lỗi từ server: " + response.statusText);
+                }
+                return response.json();
+              })
+              .then((data) => {
+                // Xóa nội dung cũ của container
+                container.innerHTML = "";
+
+                // Tạo div kết quả mới
+                const resultDiv = document.createElement("div");
+                resultDiv.className = "result";
+
+                // Xử lý trường "Thời gian nghỉ"
+                let timeHtml = `
+                  <div class="result-item">
+                    <span class="label">Thời gian nghỉ:</span>
+                    <span class="value">${data["leave_times"].join(", ")}</span>
+                  </div>
+                `;
+                // Xử lý trường "Lý do"
+                let reasonHtml = `
+                  <div class="result-item">
+                    <span class="label">Lý do nghỉ:</span>
+                    <span class="value">${data["leave_reasons"]}</span>
+                  </div>
+                `;
+
+                resultDiv.innerHTML = `
+                <div class="result-item">
+                  <span class="label">Nhân viên xin nghỉ:</span>
+                  <span class="value">${
+                    data["employee"] || "Không xác định"
+                  }</span>
+                </div>
+                ${timeHtml}
+                ${reasonHtml}
+              `;
+                container.appendChild(resultDiv);
+              })
+              .catch((error) => {
+                container.innerHTML = "<p>Có lỗi xảy ra: " + error + "</p>";
+              });
+          });
+      });
+    </script>
+  </body>
+</html>
