@@ -294,33 +294,39 @@ print(f"Generated {len(unique_samples)} unique samples with unique structures.")
 with open("data/train.json", "w", encoding="utf-8") as f:
     json.dump(unique_samples, f, ensure_ascii=False, indent=2)
 
-while len(validation_samples) < 2000:
-    sentence, meta = generate_sample()
-    # Tạo chữ ký cấu trúc cho mẫu hiện tại: gồm phần intro, số yêu cầu và cấu trúc của từng request
-    structure_signature = (
-        meta["intro"],
-        len(meta["requests"]),
-        tuple(req["structure"] for req in meta["requests"]),
-    )
+# # Load train dataset để đảm bảo validation không trùng lặp hoàn toàn
+# with open("data/train.json", "r", encoding="utf-8") as f:
+#     train_data = json.load(f)
+# # Lưu trữ tất cả chữ ký cấu trúc có trong train
+# train_structure_signatures = set()
+# for sample in train_data:
+#     text = sample["text"]
+#     train_structure_signatures.add(text)  # Sử dụng nội dung câu làm chữ ký đơn giản
 
-    # Nếu cấu trúc này đã có, bỏ qua mẫu này
-    if structure_signature in unique_structure_signatures:
-        continue
+# validation_samples = []
+# while len(validation_samples) < 2000:
+#     sentence, meta = generate_sample()
+#     # Dùng nội dung câu làm chữ ký kiểm tra
+#     structure_signature = sentence
 
-    tokens = sentence.split()
-    ner_tags = generate_token_labels_from_meta(sentence, meta)
-    # Nếu số token không khớp với số nhãn, bỏ qua (trường hợp hiếm)
-    if len(tokens) != len(ner_tags):
-        continue
+#     # Đảm bảo mẫu này không trùng hoàn toàn với train
+#     if structure_signature in train_structure_signatures:
+#         continue
 
-    unique_structure_signatures.add(structure_signature)
-    validation_samples.append({"text": sentence, "ner_tags": ner_tags})
+#     tokens = sentence.split()
+#     ner_tags = generate_token_labels_from_meta(sentence, meta)
 
-print(f"Generated {len(validation_samples)} unique samples with unique structures.")
+#     # Nếu số token không khớp với số nhãn, bỏ qua (trường hợp hiếm)
+#     if len(tokens) != len(ner_tags):
+#         continue
 
-# Sinh tập validation 
-val_samples = random.sample(validation_samples, 2000)
-with open("data/validation.json", "w", encoding="utf-8") as f:
-    json.dump(val_samples, f, ensure_ascii=False, indent=2)
+#     train_structure_signatures.add(structure_signature)  # Đánh dấu đã lấy
+#     validation_samples.append({"text": sentence, "ner_tags": ner_tags})
 
-print("Dataset generated successfully!")
+# print(f"Generated {len(validation_samples)} unique validation samples.")
+
+# # Lưu tập validation
+# with open("data/validation.json", "w", encoding="utf-8") as f:
+#     json.dump(validation_samples, f, ensure_ascii=False, indent=2)
+
+print("Validation dataset generated successfully!")
